@@ -1,4 +1,4 @@
-package code.connection.hibernate;
+package code.connection.hibernate.basic;
 
 import javax.persistence.*;
 
