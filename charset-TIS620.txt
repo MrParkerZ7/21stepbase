@@ -1,0 +1,258 @@
+ทบทวน Functional Features ใน Java 8 ก่อนการมาถึงของ Java 9
+
+Developer เราทุกคนคงเคยได้ยินเกี่ยวกับ Functional Programming มาบ้างแล้ว โดยเฉพาะช่วงหลังๆมานี้ ถ้าใครติดตาม Software Developer Community คงเคยได้ยินชื่อภาษาอย่าง Scala และ Kotlin อย่างแน่นอน ทั้งภาษา Scala และ Kotlin เป็น Programing Language ที่ทำงานบน JVM (Java Virtual Machine) เหมือนภาษา Java สำหรับผมแล้วทั้ง Scala และ Kotlin ไม่ได้มีอะไรไปมากกว่าการเพิ่มความสามารถที่ขาดหายของภาษา Java เลย โดยมีการเพิ่ม Syntax ต่างๆเพื่อช่วยให้ Developer เขียนโปรแกรมสะดวกสบายมากขึ้นและเพิ่มความสามารถด้านอื่นๆ แต่ถ้าใครได้อ่านบทความหรือ Blog ต่างๆหรือว่าได้ใช้ตัวภาษา Scala หรือ Kotlin ในการทำงานแล้ว จะเห็นว่าตัวภาษามี Features ของ Functional Languages ทำให้ทั้ง 2 ภาษามีข้อได้เปรียบภาษา Java แต่การเปลี่ยนแปลงครั้งสำคัญใน Java 8 ที่เพิ่ม concepts ของ functional programming เข้ามา โดยเฉพาะ Lambda expressions, method references , streams และ Features อื่นๆ ทำให้ Java เองไม่ได้ตามหลัง Scala และ Kotlin มากมายนัก โดยในเดือนกันยายน 2017 นี้ Java 9 ก็จะ Release แล้ว ผมเลยอยากเขียนบทความทบทวน Functional Features ใน Java 8 ก่อนการมาถึงของ Java 9 ต่อไป
+ถึง Java 8 จะ Release ตั้งแต่ปี 2014 แต่สำหรับหลายๆคนที่ยังไม่ได้ใช้ Functional features หลายๆคนก็อาจจะ Surprise ในความแตกต่างของ Code เล็กน้อย เริ่มกันเลยครับ
+Lambda Expressions
+โดยทั่วไป Function จะประกอบไปด้วย
+1. ชื่อ Function
+2. Parameter
+3. ตัว Function body
+4.Return type
+แต่สำหรับ Lambda Expressions เองต้องการแค่ Parameter และ Function body ก็พอ
+Lambda Expressions ทำหน้าที่เหมือน Anonymous function ที่ประกอบไปด้วย Set ของ Parameter ตามด้วย Arrow(->) และ Function body
+ลองพิจารณา Runnable interface ที่มี Abstract method ชื่อ run และ Method run ไม่รับ Arguments และ Returns void
+Thread class มี constructor รับ Runnable เป็น Argument ดังนั้น ผมก็ทำการสร้าง Anonymous inner class ด้วยการสั่ง new Runnable() และตามด้วย Body และ Code ใน Body ทำการ Overrides run method และสั่ง print string ดั่ง Code ข้างล่างนี้
+public class Main {
+    public static void main(String[] args) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("inside runnable");
+            }
+        }).start();
+    }
+}
+ทีนี้ลองใช้ Lambda expression ใน Thread constructor
+public class Main {
+    public static void main(String[] args) {
+        new Thread(() -> System.out.println("inside   runnable")).start();
+    }
+}
+Syntax การเขียนใช้ Arrow(->) แยก Arguments ออกจาก Body ในที่นี้ Runnable ไม่ได้รับ Argument เราก็เลยใช้ ( ) ตามด้วย -> นั้นเอง และต่อมาก็ตามด้วย Body ซึ่งถ้าตัว Body มีเพียงบรรทัดเดียว เราไม่จำเป็นต้องใช้เครื่องหมาย{} เลย และนี้แหละครับ ที่เขาเรียกกัน Lambda Expressions และค่าอะไรก็ตามที่ Lambda Expressions ประเมินผลจะ Return ค่าออกมาให้เราด้วยแต่ใน Case นี้เราแค่ทำการ Print String และ Return void ดังนั้น Lambda Expressions ใน Case นี้ก็เลย Return void ด้วย
+โดย Lambda expression สามารถ Assign ค่าให้กับ Reference ได้ด้วยนะครับ เช่น
+Runnable runnable = () -> System.out.println("Run method");
+new Thread(runnable).start();
+Method References
+สำหรับ Method reference จะใช้ Double-colon (::) แยก Instance reference หรือชื่อของ Class ออกจาก Method ในการเรียกใช้งาน
+List<String> stringList = Arrays.asList("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper", "Cherprang");
+//lambda expression
+stringList.forEach(it -> System.out.println(it));
+
+//method reference
+stringList.forEach(System.out::println);
+Code ด้านบนใช้ ForEach method ทำการวนลูปและรับ Consumer ซึ่งสามรถ ใช้ได้ทั้ง Lambda expression หรือ Method reference ในการสั่ง Print ค่า string จะเห็นว่า Double-colon (::) ทำการอ้างถึง Println method ของ System.out instance และไม่มีวงเล็บปิดท้าย Method reference ด้วย ข้อดีของการใช้ Method reference ก็คืออย่างแรกเลย Code สั้นขึ้น อย่างที่สองคือประกอบด้วยชื่อ Class และ Instance ของ Method ที่เราเรียกใช้งาน ทำให้ Code อ่านง่ายขึ้นนั้นเอง
+สรุป การใช้งาน Method reference syntax มีรูปแบบการใช้คือ
+object::instanceMethod อ้าง Instance method โดยการอ้างชี้ไปที่ Method ที่มีใน Object เช่น System.out::println
+Class::staticMethod อ้างถึง Static method เช่น Math::random
+Class::instanceMethod เรียกใช้ Instance method ที่มีใน Object เช่น PrintUtils::print ดั่ง Code ตัวอย่างด้านล่าง
+public class Main {
+    public static void main(String[] args) {
+        List<String> stringList = Arrays.asList("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper","Cherprang");
+        stringList.forEach(PrintUtils::print);
+    }
+}
+
+class PrintUtils {
+    static void print(String it) {
+        System.out.println(it);
+    }
+}
+Constructor References
+Constructor References ใช้ในการสร้าง Object สามารถใช้ new keyword ในการสร้าง Object เช่นในตัวอย่างด้านล่างผมสร้าง Character object โดยการใช้ Constructor References และใช้ Method reference convert กลับเป็น String อีกที
+public class main {
+  public static void main(String[] args) {
+List<String> stringList = Arrays.asList("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper","Cherprang");
+//Using a Constructor References create Character
+List<Character> characters = stringList.stream().map(Character::new)
+.collect(Collectors.toList());
+
+List<String> names = characters.stream().map(Character::getName)
+.collect(Collectors.toList());
+    }
+}
+
+class Character {
+    Character(String name) {
+        this.name = name;
+    }
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+Streams
+คราวนี้มาถึงตัวที่จะไม่พูดถึงไม่ได้เลยใน Java 8 ก็คือ Stream API แล้ว Stream คืออะไร ? เปรียบเทียบ Stream เหมือนกับท่อ(Pipe line) เราสามารถส่งค่าเข้าไปในท่อ เพื่อทำอะไรสักอย่างตามที่เราตั้งการแล้วค่อย Return ค่าออกมาก
+โดย Stream เป็น Immutable หรือว่า ไม่มีการเปลี่ยนแปลงค่าเดิม แต่จะใช้วิธีการ Transform ค่าของแต่ละ Element แทน และ Stream ยังทำงานแบบ Lazy ด้วย คือ Stream จะทำงานเฉพาะตอนเราจะใช้งานมันเท่านั้น เรียกว่า Lazy Streams
+การใช้งาน Stream สามารถใช้ Stream interface หรือใช้ Stream methods บน Iterable หรือ Arrays
+สร้าง Stream โดยใช้ Stream interface ด้วย Stream.of
+String names = Stream.of("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper","Cherprang").collect(Collectors.joining(","));
+System.out.println(names);
+//Anakin,Luke,Darth Vader,Han Solo,Stormtrooper,Cherprang
+สร้าง Stream โดยใช้ Stream interface ด้วย Stream.iterate
+List<Integer> nums = Stream.iterate(1, n -> n + 1).limit(10)
+.collect(Collectors.toList());
+System.out.println(nums);
+//[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+สร้าง Stream โดยใช้ Stream interface ด้วย Stream.generate
+List<Integer> nums = Stream.generate(() -> new Random().nextInt(10))
+.limit(10).collect(Collectors.toList());
+//[9, 0, 5, 7, 7, 5, 1, 4, 6, 7]
+สร้าง Stream ด้วย Arrays.stream
+String[] list = {"Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper", "Cherprang"};
+String names = Arrays.stream(list).collect(Collectors.joining(","));
+//Anakin,Luke,Darth Vader,Han Solo,Stormtrooper,Cherprang
+สร้าง Stream จาก Collection
+List<String> list = Arrays.asList("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper", "Cherprang");
+String names = list.stream().collect(Collectors.joining(","));
+System.out.println(names);
+//Anakin,Luke,Darth Vader,Han Solo,Stormtrooper,Cherprang
+สร้าง Stream ด้วย IntStream.range
+List<Integer> ints = IntStream.range(10, 15).boxed()
+.collect(Collectors.toList());
+System.out.println(ints);
+//[10, 11, 12, 13, 14]
+//ปล.boxed() method ใช้ในการ convert int เป็น Integer
+Boxed Streams
+Boxed stream ใช้ในการสร้าง Stream จาก Primitive stream เช่น IntStream, LongStream และ DoubleStream คือการใช้ boxed() ในการ Wrap elements
+ปกติเวลาเราสร้าง Stream เราสามารถใช้ Collectors class ในการ Convert จาก Stream ไปเป็น Collection ได้ เช่น
+List<String> names = Stream.of("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper", "Cherprang").collect(Collectors.toList());
+แต่สำหรับ Primitive stream ไม่สามารถใช้ Collectors.toList() ในการ Convert จาก Stream ไปเป็น Collectionได้
+List<Integer> nums = IntStream.of(1,2,3,4,5)
+        .collect(Collectors.toList());
+//แบบนี้ compile ไม่ได้
+จาก Code ข้างบนไม่สามารถ Compile ได้ จะต้องใช้ boxed() method ใช้ในการ Convert จาก IntStream เป็น Stream<Integer> ก่อน ดังนี้
+List<Integer> nums = IntStream.of(1,2,3,4,5).boxed()
+        .collect(Collectors.toList());
+หรือมีอีกแบบคือใช้ mapToObj method ในการ Convert จาก int เป็น Integer ก่อน แบบนี้
+List<Integer> nums = IntStream.of(1,2,3,4,5)
+.mapToObj(Integer::valueOf).collect(Collectors.toList());
+Map
+หลายครั้งที่เราใช้ Funtional paradigm ใน Java ที่เรียกกันว่า Map-Filter-Reduce เช่น ใช้ Mapในการ Transforms ประเภทของ Stream จากแบบนึงไปเป็นอีกแบบ ใช้ Filter ในการคัดเอาเฉพาะ Elements ที่เราต้องการ และสุดท้ายก็ใช้ Reduce ในการรวมผลของ Elements เป็นต้น
+Map เป็น Method บน Stream ใช้ในการ Transforms ข้อมูลให้เป็นรูปแบบที่เราต้องการ โดย Map method รับ Function เป็น Agument เช่น
+Function<String, Integer> getLength = it -> it.length();
+
+List<Integer> sizes = Stream.of("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper", "Cherprang")
+        .map(getLength).collect(Collectors.toList());
+//[6, 4, 11, 8, 12, 9]
+Code ข้างบนจะเห็นว่า Map method รับ Function เป็น Agument ซึ่ง Code ข้างบน ส่ง Functionในการ หาความยาวของ String เป็น Agument
+จากตัวอย่างข้างบนสามารถใช้ Lambda expression เป็น Agument ก็ได้
+List<Integer> sizes = Stream.of("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper", "Cherprang").map(it -> it.length())
+.collect(Collectors.toList());
+หรือใช้ Method references เป็น Argument ก็ได้ครับ
+List<Integer> sizes = Stream.of("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper", "Cherprang").map(String::length)
+.collect(Collectors.toList());
+FlatMap
+FlatMap method ไม่เหมือน Map แต่ FlatMap method จะรับ Function ที่สามารถสร้าง Multiple output จากแต่ละ Input value เช่น ใช้ FlatMap method ในการ Transform array ซึ่งแต่ละ Element ของ Array จะเป็น Array ของ String อีกที ตัวอย่างจาก Code ข้างล่างจะเป็นการใช้ flatMap method transform ตัว Array 2 มิติ ไปเป็น List ตัวเดียว
+String[][] data = new String[][]{{"Anakin", "Luke"}, {"Darth Vader", "Han Solo", "Stormtrooper"}, {"Cherprang"}};
+List<String> datas = Arrays.stream(data)
+.flatMap(it -> Arrays.stream(it)).collect(Collectors.toList());
+//หรือ
+List<String> datas = Arrays.stream(data)
+.flatMap(Arrays::stream).collect(Collectors.toList());
+Filter
+หลายคนคงเคยเขียน Code โดยการใช้ For loop และใช้ if ในการเช็คเงื่อนไข แล้วทำการยัด Element ที่ตรงตามเงื่อนไขให้กับ List อีกตัวเพื่อคัดเอาเฉพาะของที่เราต้องการ แบบนี้แหละครับ ที่เรียกว่า Filter pattern เช่น
+List<String> list = Arrays.asList("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper", "Cherprang");
+List<String> lengthGreaterThan8 = new ArrayList<>();
+for (String it : list) {
+    if (it.length() > 8) {
+        lengthGreaterThan8.add(it);
+    }
+}
+System.out.println(lengthGreaterThan8);
+//[Darth Vader, Stormtrooper, Cherprang]
+เหมือนกันกับ Map และ Flatmap ตัว Filter method รับ Argument ตัวเดียวเป็นแบบ Predicate หรือ Lambda expression ที่ประมวลผลแล้วคืนค่าเป็น True หรือ False
+Predicate<String> isLengthGreaterThan8 = it -> it.length() > 8;
+List<String> lengthGreaterThan8 = list.stream()
+.filter(isLengthGreaterThan8).collect(Collectors.toList());
+System.out.println(lengthGreaterThan8);
+//[Darth Vader, Stormtrooper, Cherprang]
+หรือจะใช้ Lambda expression แบบนี้
+List<String> lengthGreaterThan8 = list.stream().filter(it -> it.length() > 8).collect(Collectors.toList());
+Reduce
+สำหรับ Reduce จะใช้เมื่อเราได้ Collection ของค่าที่เราต้องการแล้ว แต่เราต้องการสร้าง Result ตัวเดียว เช่น ใช้ Reduce ในการหาค่า sum ใช้ Reduce ในการหาค่า Min หรือค่า Max หรือใช้ในการ Join String เป็นต้น
+List<String> list = Arrays.asList("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper", "Cherprang");
+String names = list.stream().filter(it -> it.length() > 8)
+.reduce((acc, name) -> acc+ ", " + name).get();
+System.out.println(names);
+//Darth Vader, Stormtrooper, Cherprang
+Built-in Operations
+สำหรับ Primitive streams เช่น IntStream, LongStream, และ DoubleStream จะมี Built-in Operations ให้เรียกใช้งานอย่างหลากหลาย เช่น average, count, max, min, และ sum เป็นต้น
+Double average = IntStream.of(1, 2, 3, 4, 5).average().getAsDouble();
+System.out.println(average) //3.0;
+
+Long count = IntStream.of(1, 2, 3, 4, 5).count();
+System.out.println(count);  //5
+Integer min = IntStream.of(1, 2, 3, 4, 5).min().getAsInt();
+System.out.println(min);  //1
+
+Integer max = IntStream.of(1, 2, 3, 4, 5).max().getAsInt();
+System.out.println(max);   //5
+Integer sum = IntStream.of(1, 2, 3, 4, 5).sum();
+System.out.println(sum);   //15
+Peek Streams
+peek ใช้ในการ Debug stream สามารถใช้ peek ในการดูแต่ละ element ของ stream ดังนี้
+List<String> list = Arrays.asList("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper", "Cherprang");
+String names = list.stream().filter(it -> it.length() > 8)
+.peek(System.out::println)
+.reduce((acc, name) -> acc+ ", " + name).get();
+//Darth Vader
+//Stormtrooper
+//Cherprang
+Optional
+เอาหละครับ มาถึงเจ้า Optional ซึ่งจะเป็น Feature สุดท้ายในบทความนี้แล้ว Optional ก็คือ Class ใหม่ที่ถูกเพิ่มเข้ามาใน Java 8 คือ java.util.Optional<T> โดยจุดประสงค์ของมัน คือเอามาใช้ในการจัดการกับ NullPointerExceptions อย่างเหมาะสม และใน Stream API บาง Method จะ Return ค่าเป็น Optional เช่น reduce, min, max, findFirst และ findAny สำหรับการสร้าง Optional จะใช้ Optional.of, Optional.ofNullable, หรือ Optional.empty
+สร้าง Optional ด้วย Optional.of ตัว Optional.of ใช้ในการหุ้ม Value ถ้า Value เป็น null ก็จะทำการ throws exception
+public class main {
+    public static void main(String[] args) {
+
+        List<String> list = Arrays.asList("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper", "Cherprang");
+
+        Optional<List<String>> listOptional = createOptional(list);
+    }
+
+    private static <T> Optional<T> createOptional(T value) {
+        return value == null ? Optional.empty() : Optional.of(value);
+    }
+}
+สร้าง Optional ด้วย Optional.ofNullable ไม่เหมือนกับ Optional.of เจ้า Optional.ofNullable เปิดให้สามารถหุ้มvalue ที่เป็น null ได้
+public class main {
+    public static void main(String[] args) {
+
+        List<String> list = Arrays.asList("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper", "Cherprang");
+
+        Optional<List<String>> listOptional = createOptional(list);
+    }
+
+    private static <T> Optional<T> createOptional(T value) {
+        return Optional.ofNullable(value);
+    }
+}
+นอกจาก Optional ยังมี Class OptionalInt, OptionalLong, และ OptionalDouble ที่ใช้ในการหุ้มค่า primitives ที่ไม่สามารถเป็น Null ได้
+สำหรับการเอา Value ที่เราใช้ Optional หุ้มกลับคืนมา เราสามารถใช้ get method ในการเอาค่าที่อยู่ใน Optional กลับมาได้ สำหรับการใช้ get method เราต้องแน่ใจด้วยนะครับ ว่ามี value อยู่ใน Optional จริงๆ และถ้าเป็นไปได้แนะนำให้หลีกเลี่ยงการใช้ get method แต่ให้ใช้ทางเลือกอื่น เช่น orElse method หรือ ifPresent
+Optional<String> firstLength2 = Stream.of("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper", "Cherprang")
+        .filter(s -> s.length() == 0).findFirst();
+System.out.println(firstLength2.get()); //อย่าใช้ Get แบบนี้โดยเด็ดขาด
+// throw NoSuchElementException
+ใช้ orElse method
+Optional<String> firstLength2 = Stream.of("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper", "Cherprang")
+        .filter(s -> s.length() == 0).findFirst();
+System.out.println(firstLength2.orElse("No 2 length string"));
+//No 2 length string
+หรือใช้ isPresent
+Optional<String> firstLength2 = Stream.of("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper", "Cherprang")
+        .filter(s -> s.length() == 0).findFirst();
+System.out.println(firstLength2.isPresent() ? firstLength2.get() : ("No 2 length string"));
+//No 2 length string
+ใช้งาน orElseThrow method เจ้า orElseThrow method รับ Supplier เป็น argument
+Optional<String> firstLength2 = Stream.of("Anakin", "Luke", "Darth Vader", "Han Solo", "Stormtrooper", "Cherprang")
+        .filter(s -> s.length() == 0).findFirst();
+
+Supplier<NoSuchElementException> throwNoSuchElementException = NoSuchElementException::new;
+System.out.println(firstLength2.orElseThrow(throwNoSuchElementException));
+// throw NoSuchElementException
+นอกจากนี้ Optional ยังมาพร้อมกับ map method และ flatMap ด้วยครับ
+สำหรับบทความนี้ก็ยังขาดหลายๆ Features ที่เพิ่มเข้ามาใน Java 8 ที่ผมไม่ได้กล่าวถึง เช่น Default Methods สำหรับใครที่สนใจก็ลองไปศึกษาเพิ่มนะครับ สำหรับบทความนี้ก็คงจบเพียงเท่านี้ ผิดพลาดประการใดก็ขออภัยด้วยนะครับ
