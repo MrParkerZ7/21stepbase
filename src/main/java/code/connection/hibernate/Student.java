@@ -1,15 +1,22 @@
 package code.connection.hibernate;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "student_detail") // Using for define different name on database.
 public class Student {
 
     @Id
     private int no;
+
+    @Column(name = "nick_name") // Using for define name column in database.
     private String name;
+
+    @Column(name = "skin_heart")
     private String color;
+
+    @Transient // Using for deprecate column.
+    private int age;
 
     public int getNo() {
         return no;
@@ -33,5 +40,15 @@ public class Student {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "no=" + no +
+                ", name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
