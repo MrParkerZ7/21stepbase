@@ -5,7 +5,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-public class SampleHibernate {
+public class HibernateCode {
 
     public static void main(String[] args) {
 //        insertData();

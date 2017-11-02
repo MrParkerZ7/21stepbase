@@ -19231,7 +19231,7 @@ Spartacus.java is a bare-bones Java class that consists of only a main() method.
 All the light gray lines of code in the class are comments that exist to explain the class’s
 purpose and function. Comments are ignored when the class is run.
 To make the new class do something, add the following line of code on a new line right
-below the comment // TODO code application logic here:
+below the comment
 Click here to view code image
 System.out.println(“I am Spartacus!”);
 The method System.out.println() displays a string of text—in this case, the
@@ -19272,7 +19272,7 @@ Click here to view code image
 13: * @param args the command line arguments
 14: */
 15: public static void main(String[] args) {
-16: // TODO code application logic here
+16:
 17: System.out.println(“I am Spartacus!”);
 18:
 19: }

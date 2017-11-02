@@ -25,7 +25,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.44</version>
+            <version>6.0.6</version>
         </dependency>
 
         <!--Using for demo Hibernate-->
@@ -33,6 +33,14 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>5.2.11.Final</version>
+        </dependency>
+
+        <!--Using for demo Hibernate-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+            <version>1.16.18</version>
         </dependency>
 
     </dependencies>
