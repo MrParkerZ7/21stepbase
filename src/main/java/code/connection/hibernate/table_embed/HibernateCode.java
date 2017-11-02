@@ -9,10 +9,10 @@ import org.hibernate.cfg.Configuration;
 public class HibernateCode {
 
     public static void main(String[] args) {
-//        insertData();
+        insertData();
 //        getData();
 //        deleteData();
-        updateData(); // XxX it's not work
+//        updateData(); // XxX it's not work
     }
 
     private static void updateData() {
