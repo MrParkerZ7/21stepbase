@@ -1,5 +1,6 @@
 package code.connection.hibernate.table_relation;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
@@ -8,8 +9,12 @@ import javax.persistence.OneToOne;
 public class Phone {
 
     @Id
+    @Column(name = "PHONE_ID")
     private int phoneId;
+
+    @Column(name = "PHONE_MODEL")
     private String phoneModel;
+
     @OneToOne
     private Human phoneHuman;
 

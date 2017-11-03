@@ -1,26 +1,20 @@
 package code.connection.hibernate.table_relation;
 
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.util.List;
 
+@Entity
 public class Car {
 
     @Id
+    @Column(name = "CAR_ID")
     private int carId;
+
+    @Column(name = "CAR_MODEL")
     private String carModel;
-    @ManyToMany
+
+    @ManyToMany(mappedBy = "humanCar")
     private List<Human> carHuman;
-
-
-    public Car() {
-    }
-
-    public Car(int carId, String carModel, List<Human> carHuman) {
-        this.carId = carId;
-        this.carModel = carModel;
-        this.carHuman = carHuman;
-    }
 
     public int getCarId() {
         return carId;

@@ -7,12 +7,18 @@ import java.util.List;
 public class Human {
 
     @Id
+    @Column(name = "HUMAN_ID")
     private int humanId;
+
+    @Column(name = "HUMAN_NAME")
     private String humanName;
+
     @OneToOne
     private Phone humanPhone;
-    @OneToMany (mappedBy = "laptopHuman")
+
+    @OneToMany(mappedBy = "laptopHuman")
     private List<Laptop> humanLaptop;
+
     @ManyToMany
     private List<Car> humanCar;
 

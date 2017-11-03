@@ -1,5 +1,6 @@
 package code.connection.hibernate.table_relation;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
@@ -8,8 +9,12 @@ import javax.persistence.ManyToOne;
 public class Laptop {
 
     @Id
+    @Column(name = "LAPTOP_ID")
     private int laptopId;
+
+    @Column(name = "LAPTOP_MODEL")
     private String laptopModel;
+
     @ManyToOne
     private Human laptopHuman;
 
