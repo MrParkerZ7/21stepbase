@@ -7,7 +7,6 @@ import javax.persistence.*;
 public class Motorcycle {
 
     @Id
-    @GeneratedValue
     private int no;
 
     private String brand;
@@ -33,7 +32,8 @@ public class Motorcycle {
 
     }
 
-    public Motorcycle(String brand, String model, Motor motor, String spec, String style, int version, String detail) {
+    public Motorcycle(int no, String brand, String model, Motor motor, String spec, String style, int version, String detail) {
+        this.no = no;
         this.brand = brand;
         this.model = model;
         this.motor = motor;

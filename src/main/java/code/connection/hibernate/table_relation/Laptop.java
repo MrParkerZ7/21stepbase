@@ -41,4 +41,6 @@ public class Laptop {
     public void setLaptopHuman(Human laptopHuman) {
         this.laptopHuman = laptopHuman;
     }
+
+
 }

@@ -16,7 +16,10 @@ public class Human {
     @OneToOne
     private Phone humanPhone;
 
-    @OneToMany(mappedBy = "laptopHuman")
+    // FetchType.EAGER using for fetch all of data not matter we gonna use or not.
+    // By default, It's not fetch because humanLaptop was manage by another table
+    // Actually, I'm not sure is already include or not.
+    @OneToMany // (mappedBy = "laptopHuman", fetch = FetchType.EAGER)
     private List<Laptop> humanLaptop;
 
     @ManyToMany
@@ -60,5 +63,16 @@ public class Human {
 
     public void setHumanCar(List<Car> humanCar) {
         this.humanCar = humanCar;
+    }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                "humanId=" + humanId +
+                ", humanName='" + humanName + '\'' +
+                ", humanPhone=" + humanPhone +
+                ", humanLaptop=" + humanLaptop +
+                ", humanCar=" + humanCar +
+                '}';
     }
 }

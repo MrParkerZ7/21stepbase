@@ -39,4 +39,5 @@ public class Car {
     public void setCarHuman(List<Human> carHuman) {
         this.carHuman = carHuman;
     }
+
 }

@@ -41,4 +41,6 @@ public class Phone {
     public void setPhoneHuman(Human phoneHuman) {
         this.phoneHuman = phoneHuman;
     }
+
+
 }
