@@ -1,9 +1,9 @@
-package code.connection.hibernate.table_embed;
+package code.connection.hibernate.h_01_table_embed;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "motor_bike") // Define different name on database.
+@Table(name = "Motor_Bike") // Define different name on database.
 public class Motorcycle {
 
     @Id

@@ -1,9 +1,9 @@
-package code.connection.hibernate.basic;
+package code.connection.hibernate.h_00_basic;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "student_detail") // Using for define different name on database.
+@Table(name = "Student_Detail") // Using for define different name on database.
 public class Student {
 
     @Id

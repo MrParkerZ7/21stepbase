@@ -1,4 +1,4 @@
-package code.connection.hibernate.basic;
+package code.connection.hibernate.h_00_basic;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

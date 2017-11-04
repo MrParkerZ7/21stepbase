@@ -1,4 +1,4 @@
-package code.connection.hibernate.table_relation;
+package code.connection.hibernate.h_02_table_relation;
 
 import javax.persistence.*;
 import java.util.List;
@@ -7,22 +7,22 @@ import java.util.List;
 public class Human {
 
     @Id
-    @Column(name = "HUMAN_ID")
+    @Column(name = "human_id")
     private int humanId;
 
-    @Column(name = "HUMAN_NAME")
+    @Column(name = "human_name")
     private String humanName;
 
     @OneToOne
     private Phone humanPhone;
 
-    // FetchType.EAGER using for fetch all of data not matter we gonna use or not.
-    // By default, It's not fetch because humanLaptop was manage by another table
-    // Actually, I'm not sure is already include or not.
-    @OneToMany // (mappedBy = "laptopHuman", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "laptopHuman")
     private List<Laptop> humanLaptop;
 
-    @ManyToMany
+    // FetchType.EAGER using for fetch all of data not matter we gonna use or not.
+    // By default, It's not fetch because humanLaptop was mapped by another table
+    // The data still can be fetch. If connection was's close.
+    @ManyToMany(fetch = FetchType.EAGER)
     private List<Car> humanCar;
 
     public int getHumanId() {
@@ -64,6 +64,7 @@ public class Human {
     public void setHumanCar(List<Car> humanCar) {
         this.humanCar = humanCar;
     }
+
 
     @Override
     public String toString() {

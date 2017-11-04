@@ -1,4 +1,4 @@
-package code.connection.hibernate.table_embed;
+package code.connection.hibernate.h_01_table_embed;
 
 import javax.persistence.Embeddable;
 

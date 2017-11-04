@@ -1,4 +1,4 @@
-package code.connection.hibernate.table_relation;
+package code.connection.hibernate.h_02_table_relation;
 
 import javax.persistence.*;
 import java.util.List;
@@ -7,10 +7,10 @@ import java.util.List;
 public class Car {
 
     @Id
-    @Column(name = "CAR_ID")
+    @Column(name = "car_id")
     private int carId;
 
-    @Column(name = "CAR_MODEL")
+    @Column(name = "car_model")
     private String carModel;
 
     @ManyToMany(mappedBy = "humanCar")
@@ -39,5 +39,6 @@ public class Car {
     public void setCarHuman(List<Human> carHuman) {
         this.carHuman = carHuman;
     }
+
 
 }

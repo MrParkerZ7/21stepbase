@@ -1,18 +1,15 @@
-package code.connection.hibernate.table_relation;
+package code.connection.hibernate.h_02_table_relation;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
 @Entity
 public class Phone {
 
     @Id
-    @Column(name = "PHONE_ID")
+    @Column(name = "phone_id")
     private int phoneId;
 
-    @Column(name = "PHONE_MODEL")
+    @Column(name = "phone_model")
     private String phoneModel;
 
     @OneToOne
@@ -41,6 +38,5 @@ public class Phone {
     public void setPhoneHuman(Human phoneHuman) {
         this.phoneHuman = phoneHuman;
     }
-
 
 }

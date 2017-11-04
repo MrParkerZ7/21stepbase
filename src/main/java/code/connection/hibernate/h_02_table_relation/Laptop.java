@@ -1,18 +1,15 @@
-package code.connection.hibernate.table_relation;
+package code.connection.hibernate.h_02_table_relation;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Entity
 public class Laptop {
 
     @Id
-    @Column(name = "LAPTOP_ID")
+    @Column(name = "laptop_id")
     private int laptopId;
 
-    @Column(name = "LAPTOP_MODEL")
+    @Column(name = "laptop_model")
     private String laptopModel;
 
     @ManyToOne

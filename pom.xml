@@ -21,26 +21,40 @@
     </build>
 
     <dependencies>
-        <!--Using for demo JDBC && Hibernate-->
+        <!--Using for JDBC && Hibernate-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>6.0.6</version>
         </dependency>
 
-        <!--Using for demo Hibernate-->
+        <!--Using for Hibernate-->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>5.2.11.Final</version>
         </dependency>
 
-        <!--Using for demo Hibernate-->
+        <!--Using for Hibernate-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
             <version>1.16.18</version>
+        </dependency>
+
+        <!--Using for HibernateCaching-->
+        <dependency>
+            <groupId>org.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+
+        <!--Using for HibernateCaching-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-ehcache</artifactId>
+            <version>5.2.11.Final</version>
         </dependency>
 
     </dependencies>
