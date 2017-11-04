@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.21step.com/MurdererSchema"
+        xmlns:tns="http://www.21step.com/MurdererSchema"
+        elementFormDefault="qualified">
+
+    <complexType name="murderer">
+        <sequence>
+            <element name="murderer" type="tns:murdererType" maxOccurs="5" minOccurs="1"></element>
+        </sequence>
+    </complexType>
+
+    <complexType name="murdererType">
+        <sequence>
+            <element name="name" type="string"></element>
+            <element name="tool" type="string"></element>
+            <element name="total" type="integer"></element>
+        </sequence>
+        <attribute name="id" type="ID" use="required"></attribute>
+    </complexType>
+
+    <element name="globalMurderer"></element>
+</schema>
