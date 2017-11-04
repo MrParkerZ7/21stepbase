@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+        <!ELEMENT killers (killer+)>
+        <!ELEMENT killer (name,weapon,bounty)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT weapon (#PCDATA)>
+        <!ELEMENT bounty (#PCDATA)>
+
+        <!--Required-->
+        <!ATTLIST killer id ID #REQUIRED>
+        <!--Optional-->
+        <!ATTLIST killer lang (EN|TH|Kotlin|Java) "EN")>

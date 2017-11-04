@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE killers SYSTEM "KillerType.dtd">
+
+<killers>
+    <killer id="1" lang="TH">
+        <name>Park</name>
+        <weapon>Sword</weapon>
+        <bounty>70฿</bounty>
+    </killer>
+    <killer id="2" lang="Kotlin">
+        <name>Micro</name>
+        <weapon>Lightning</weapon>
+        <bounty>700000$</bounty>
+    </killer>
+    <killer id="3">
+        <name>Sigma</name>
+        <weapon>Sniper</weapon>
+        <bounty>500000$</bounty>
+    </killer>
+</killers>
