@@ -16,7 +16,7 @@ public class DatabaseConnectivity {
     private final static String url = "jdbc:mysql://localhost:3306/demo_jdbc";
     private final static String username = "root";
     private final static String pass = "";
-    private final static String querySingle = "select name from student where id=102"; // SQL Query command by filter
+    private final static String querySingle = "select name from student where id=102"; // SQL Query commander by filter
     private final static String queryAll = "select * from student";
     private final static String queryPrepare = "insert into student values (?,?)";
 

@@ -40,11 +40,11 @@ public class StreamApiSample {
 
         { // Internal loop
 
-            { // single command
+            { // single commander
                 values.forEach(i -> System.out.println("ForEach SingleCommand: " + i));
             }
 
-            { // multiple command
+            { // multiple commander
                 values.forEach(i -> {
                     System.out.println("ForEach MultiCommand" + i);
                     System.out.println("ForEach MultiCommand" + ++i);

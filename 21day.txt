@@ -85,8 +85,8 @@ WEEK II: The Java Class Library
 DAY 8 Data Structures
 DAY 9 Working with Swing
 DAY 10 Building a Swing Interface
-DAY 11 Arranging Components on a User Interface
-DAY 12 Responding to User Input
+DAY 11 Arranging Components on a modularity.main.User Interface
+DAY 12 Responding to modularity.main.User Input
 DAY 13 Creating Java2D Graphics
 DAY 14 Developing Swing Applications
 WEEK III: Java Programming
@@ -372,7 +372,7 @@ Questions
 Answers
 Certification Practice
 Exercises
-DAY 11: Arranging Components on a User Interface
+DAY 11: Arranging Components on a modularity.main.User Interface
 Basic Interface Layout
 Laying Out an Interface
 Flow Layout
@@ -390,7 +390,7 @@ Questions
 Answers
 Certification Practice
 Exercises
-DAY 12: Responding to User Input
+DAY 12: Responding to modularity.main.User Input
 Event Listeners
 Setting Up Components
 Event-Handling Methods
@@ -421,7 +421,7 @@ Color
 Using Color Objects
 Testing and Setting the Current Colors
 Drawing Lines and Polygons
-User and Device Coordinate Spaces
+modularity.main.User and Device Coordinate Spaces
 Specifying the Rendering Attributes
 Creating Objects to Draw
 Drawing Objects
@@ -548,7 +548,7 @@ Running the App
 Designing an Android App
 Preparing Resources
 Configuring a Manifest File
-Designing the Graphical User Interface
+Designing the Graphical modularity.main.User Interface
 Writing Code
 Summary
 Q&A
@@ -679,7 +679,7 @@ Python, and Ruby.
 You might be familiar with Java programming tools such as Eclipse, NetBeans, and
 IntelliJ IDEA. These programs make it possible to develop functional Java programs, and
 you also can use Oracle’s Java Development Kit. The kit, which is available for free on
-the Web, is a set of command-line tools for writing, compiling, and testing Java programs.
+the Web, is a set of commander-line tools for writing, compiling, and testing Java programs.
 NetBeans, another free tool offered by Oracle, is an integrated development environment
 for the creation of Java programs. It can be downloaded from www.netbeans.org.
 This book introduces you to all aspects of Java software development using the most
@@ -913,7 +913,7 @@ available over the Web to support that version. The current release is Java SE
 Development Kit 8.
 The drawback of developing Java programs with the JDK is that it is a set of commandline
 tools. Therefore, it has no graphical user interface for editing programs, turning them
-into Java classes, and testing them. (A command line is simply a prompt for typing text
+into Java classes, and testing them. (A commander line is simply a prompt for typing text
 commands. It’s available in Windows as the program Command Prompt.)
 Oracle offers an excellent free IDE for Java programmers called NetBeans on the website
 www.netbeans.org. Because NetBeans is easier to use for most people than the JDK, it’s
@@ -1010,7 +1010,7 @@ Some can be used as a network router.
 They support different connection speeds.
 Even with these differences, two HighSpeedModem objects still have enough in
 common to be recognizable as related objects.
-Here’s another example: Using Java, you could create a class to represent all command
+Here’s another example: Using Java, you could create a class to represent all commander
 buttons—the clickable rectangles that appear on windows, dialogs, and other parts of a
 program’s graphical user interface.
 When the CommandButton class is developed, it could define these features:
@@ -1123,7 +1123,7 @@ Programming.”
 This book uses NetBeans as its primary development tool for creating Java programs.
 NetBeans organizes Java classes into projects. It will be useful to have a project to hold
 the classes you create in this book. If you have not done so already, create a project:
-1. Choose the menu command File, New Project. The New Project dialog appears.
+1. Choose the menu commander File, New Project. The New Project dialog appears.
 2. In the Categories pane, choose Java.
 3. In the Projects pane, choose Java Application and click Next. The New Java
 Application dialog opens.
@@ -1134,10 +1134,10 @@ where your Java programs can be found on your computer.
 6. Click Finish.
 The project is created. You can use it throughout the book for the programs you work on.
 If you created a project earlier, it probably will be open in NetBeans. (If not, choose the
-menu command File, Open Recent Project to select it.) A new class you create will be
+menu commander File, Open Recent Project to select it.) A new class you create will be
 added to this project.
 To begin your first class, run NetBeans and start a new program:
-1. Choose the menu command File, New File. The New File dialog opens.
+1. Choose the menu commander File, New File. The New File dialog opens.
 2. In the Categories pane, choose Java.
 3. In the File Types pane, choose Empty Java File and click Next. The Empty Java File
 dialog opens.
@@ -1146,7 +1146,7 @@ in the Created File field, which can’t be edited. This file has the name
 MarsRobot.java.
 5. Click Finish.
 The NetBeans source code editor opens with nothing in it. Fill it with the code in Listing
-1.1. When you’re done, save the file using the menu command File, Save. The file
+1.1. When you’re done, save the file using the menu commander File, Save. The file
 MarsRobot.java will be saved.
 Note
 Don’t type the numbers at the beginning of each line in the listing. They’re not part
@@ -1223,7 +1223,7 @@ System.out.println(“Temperature: “ + temperature);
 }
 This method calls the method System.out.println() to display the values of three
 instance variables, along with some text explaining what each value represents.
-If you haven’t saved this file yet, choose File, Save. This command is disabled if the file
+If you haven’t saved this file yet, choose File, Save. This commander is disabled if the file
 hasn’t been changed since the last time you saved it.
 Running the Program
 Even if you typed the MarsRobot program in Listing 1.1 correctly and compiled it into a
@@ -1274,7 +1274,7 @@ Tip
 If you encounter problems compiling or running any program in this book, you can
 find a copy of the source file and other related files on the book’s official website at
 www.java21days.com.
-After you have compiled the application, run the program by choosing the menu command
+After you have compiled the application, run the program by choosing the menu commander
 Run, Run File. The output displayed by the MarsApplication class appears in an
 Output pane in NetBeans, as shown in Figure 1.1.
 FIGURE 1.1 The output of the MarsApplication class.
@@ -1469,7 +1469,7 @@ java.lang.Object.
 By default, your Java classes can refer to the classes in the java.lang package using
 only short names. The java.lang package provides basic language features such as
 string handling and mathematical operations. To use classes from any other package, you
-must refer to them explicitly using their full package name or use an import command
+must refer to them explicitly using their full package name or use an import commander
 to import the package in your source code file.
 Because the Color class is contained in the java.awt package, you normally refer to it
 in your programs with the notation java.awt.Color.
@@ -1593,7 +1593,7 @@ Comparisons
 Logical operators
 Statements and Expressions
 All the tasks you want to accomplish in a Java program can be broken into a series of
-statements. In a programming language, a statement is a simple command that causes
+statements. In a programming language, a statement is a simple commander that causes
 something to happen.
 Statements represent a single action taken in a Java program. Here are three simple Java
 statements:
@@ -1803,7 +1803,7 @@ final int ESCAPE_CODE = 27;
 Today’s first project is a Java application that creates several variables, assigns them initial
 values, and displays two of them as output. Run NetBeans and create a new Java program
 by undertaking these steps, which have one difference from the procedure in Day 1:
-1. Choose the menu command File, New File. The New File dialog box opens.
+1. Choose the menu commander File, New File. The New File dialog box opens.
 2. In the Categories pane, choose Java.
 3. In the File Types pane, choose Empty Java File and click Next. The Empty Java File
 dialog box opens.
@@ -1872,7 +1872,7 @@ forever when you click the Save button. */
 A Javadoc comment begins with /** and ends with */. Everything between these
 delimiters is considered to be official documentation on how the class and its methods
 work.
-Javadoc comments are designed to be read by utilities such as javadoc, a command-line
+Javadoc comments are designed to be read by utilities such as javadoc, a commander-line
 tool that’s part of the Java Development Kit (JDK). This tool uses official comments to
 create a set of web pages that document the functionality of a Java class, show its place in
 relation to its superclass and subclasses, and describe each of its methods.
@@ -2032,7 +2032,7 @@ you’re trying to end up with.
 The next project is a Java class that demonstrates how to perform simple arithmetic in the
 language. Create a new empty Java file in NetBeans called Weather in the
 com.java21days package and enter the code shown in Listing 2.2 into the source code
-editor. Save the file with the menu command File, Save when you’re done.
+editor. Save the file with the menu commander File, Save when you’re done.
 LISTING 2.2 The Full Text of Weather.java
 Click here to view code image
 1: package com.java21days;
@@ -3560,11 +3560,11 @@ System.out.println(“Consider cheating!”);
 A switch statement is built on a test variable. In the preceding example, the variable is
 the value of the grade variable, which holds a char value.
 The test variable can be the primitive types byte, char, short, or int or the class
-String. The following code uses the value of a String object named command to
+String. The following code uses the value of a String object named commander to
 decide which method to call:
 Click here to view code image
-String command = “close”;
-switch (command) {
+String commander = “close”;
+switch (commander) {
 case “open”:
 openFile();
 break;
@@ -3572,7 +3572,7 @@ case “close”:
 closeFile();
 break;
 default:
-System.out.println(“Invalid command”);
+System.out.println(“Invalid commander”);
 }
 }
 The test variable is compared in turn with each case value. If a match is found, the
@@ -3679,18 +3679,18 @@ Click here to view code image
 41: return count;
 42: }
 43: }
-This application uses command-line arguments to specify the month and year to check.
+This application uses commander-line arguments to specify the month and year to check.
 The first argument is the month, which should be expressed as a number from 1 to 12. The
 second argument is the year, which should be expressed as a full four-digit year.
 If the application is run without setting the arguments, it uses 1 as the month and 12 as the
 year, displaying the output in Figure 4.2.
 FIGURE 4.2 Using switch-case to handle numerous conditionals.
-To set command-line arguments in NetBeans, choose Run, Set Project Configuration,
+To set commander-line arguments in NetBeans, choose Run, Set Project Configuration,
 Customize. The Project Properties dialog opens, as shown in Figure 4.3.
-FIGURE 4.3 Setting command-line arguments for an application in NetBeans.
+FIGURE 4.3 Setting commander-line arguments for an application in NetBeans.
 In the Main Class field, enter the name of the class that contains the main() method that
 will be run: com.java21days.DayCounter.
-In the Arguments field, enter the command-line arguments separated by spaces, such as 9
+In the Arguments field, enter the commander-line arguments separated by spaces, such as 9
 2016. Click OK to save this configuration.
 To run the application with these arguments in NetBeans, choose Run, Run Project
 (instead of Run, Run File). When run with 9 and 2016 as arguments, the output is that
@@ -3724,8 +3724,8 @@ expressions: year % 100 == 0 and year % 400 != 0. If both these conditions
 are true, count is set to 28.
 The countDays method ends by returning the value of count in line 41.
 When you run the DayCounter application, the main() method in lines 4–13 is executed.
-In all Java applications, command-line arguments are stored in an array of String
-objects. This array is called arguments in DayCounter. The first command-line
+In all Java applications, commander-line arguments are stored in an array of String
+objects. This array is called arguments in DayCounter. The first commander-line
 argument is stored in argument[0], the second in argument[1], and upward until
 all arguments have been stored. If the application is run with no arguments, the array is
 created with no elements.
@@ -3743,7 +3743,7 @@ countDays() method is called with monthIn and yearIn, and the value returned by
 this method is displayed.
 Note
 At this point, you might want to know how to collect input from a user in a program
-rather than using command-line arguments to receive it. There isn’t a method
+rather than using commander-line arguments to receive it. There isn’t a method
 comparable to System.out.println() that receives input. Instead, you must
 learn a bit more about Java’s input and output classes before you can receive input
 in a program without a graphical user interface. This topic is covered during Day
@@ -4137,7 +4137,7 @@ application that displays every date in a given year in a single list from Janua
 December 31.
 2. Create a class that takes words for the first 10 numbers (“one” to “ten”) and
 converts them into a single long integer. Use a switch statement for the
-conversion and command-line arguments for the words.
+conversion and commander-line arguments for the words.
 Exercise solutions are offered on the book’s website at www.java21days.com.
 Day 5. Creating Classes and Methods
 If you’re coming to Java from another programming language, you might be struggling
@@ -4408,7 +4408,7 @@ Click here to view code image
 17: System.out.println();
 18: }
 19: }
-This application takes one or more command-line arguments and displays them in all
+This application takes one or more commander-line arguments and displays them in all
 uppercase letters.
 In NetBeans, set the arguments by choosing Run, Set Project Configuration, Customize.
 The Project Properties dialog appears. Enter com.java21days.Passer as the Main
@@ -4416,7 +4416,7 @@ Class and Athos Aramis Porthos (or words of your choosing) as the Arguments
 and click OK. Run the application by choosing Run, Run Project.
 If you use the suggested arguments, the program produces the output shown in Figure 5.2.
 FIGURE 5.2 Testing how objects are passed to a method.
-The Passer application uses command-line arguments stored in the arguments array of
+The Passer application uses commander-line arguments stored in the arguments array of
 strings.
 The application creates a Passer object and calls its toUpperCase() method with the
 arguments array as an argument (lines 12–13).
@@ -4425,9 +4425,9 @@ array element in line 7 changes the actual element (rather than a copy of it). D
 array with lines 14–16 demonstrates this.
 Caution
 If nothing happens when you run the Passer application in NetBeans, you’re
-running it with the command Run, Run File instead of Run, Run Project. The Run
-File command does not use the arguments set up in the project configuration. The
-Run Project command does.
+running it with the commander Run, Run File instead of Run, Run Project. The Run
+File commander does not use the arguments set up in the project configuration. The
+Run Project commander does.
 Class Methods
 The relationship between class and instance variables is directly comparable to how class
 and instance methods work.
@@ -4493,7 +4493,7 @@ more about access methods during Day 6.
 static means that main() is a class method.
 void means that the main() method doesn’t return a value.
 main() takes one parameter, which is an array of strings. This argument holds
-command-line arguments.
+commander-line arguments.
 The body of the main() method contains any code you need to start your application,
 such as the initialization of variables or the creation of objects.
 The main() method is a class method. An object of the class that holds main() is not
@@ -4524,14 +4524,14 @@ Passing Arguments to Java Applications
 How you pass arguments to a Java application varies based on the environment and JVM
 on which Java is being run.
 To pass arguments to a Java program with the java interpreter included with the Java
-Development Kit (JDK), the arguments would be appended to the command line when the
+Development Kit (JDK), the arguments would be appended to the commander line when the
 program is run. For example:
 java Echo April 450 -10
 Here java is the name of the interpreter, Echo is the Java application, and the rest are
 three arguments passed to a program: “April”, “450”, and “-10”. Note that a space
 separates each of the arguments.
 To group arguments that have spaces in them, surround the arguments with quotation
-marks. For example, consider the following command line:
+marks. For example, consider the following commander line:
 Click here to view code image
 java Echo Wilhelm Niekro Hough “Tim Wakefield” 49
 Putting quotation marks around “Tim Wakefield” causes that text to be treated as a single
@@ -4543,9 +4543,9 @@ Caution
 One thing quotation marks are not used for is to identify strings. Every argument
 passed to an application is stored in an array of String objects, even if it has a
 numeric value (such as 450, –10, and 49 in the preceding examples).
-Because NetBeans runs the JVM behind the scenes, there’s no command line on which to
+Because NetBeans runs the JVM behind the scenes, there’s no commander line on which to
 specify arguments. Instead, they can be set in the project configuration with the Run, Set
-Project Configuration, Customize command, as you did earlier to run the RangeLister
+Project Configuration, Customize commander, as you did earlier to run the RangeLister
 application.
 Handling Arguments in Your Java Application
 When an application is run with arguments, Java stores the arguments as an array of
@@ -4586,12 +4586,12 @@ integers.
 The Averager application makes sure that in line 7 at least one argument is passed to the
 program. This is handled through length, the instance variable that contains the number
 of elements in the arguments array.
-You must always do things like this when dealing with command-line arguments.
+You must always do things like this when dealing with commander-line arguments.
 Otherwise, your programs crash with ArrayIndexOutOfBoundsException errors
-whenever the user supplies fewer command-line arguments than you were expecting.
+whenever the user supplies fewer commander-line arguments than you were expecting.
 If at least one argument is passed to the application, the for loop iterates through all the
 strings stored in the arguments array (lines 8–10).
-Because all command-line arguments are passed to a Java application as String objects,
+Because all commander-line arguments are passed to a Java application as String objects,
 you must convert them to numeric values before using them in any mathematical
 expressions. The parseInt() class method of the Integer class takes a String
 object as input and returns an int (line 9).
@@ -5603,7 +5603,7 @@ another package.
 They enable you to protect classes, variables, and methods in larger ways than on a
 class-by-class basis. You learn more about protections with packages later.
 Packages can be used to uniquely identify your work.
-Every time you use the import command or refer to a class by its full package name
+Every time you use the import commander or refer to a class by its full package name
 (java.util.StringTokenizer, for example), you are using packages.
 To use a class contained in a package, you can use one of three techniques:
 If the class you want to use is in the package java.lang (for example, System
@@ -5706,7 +5706,7 @@ NetBeans makes it easy to import individual classes as you write a program. As y
 enter statements in the source code editor, NetBeans will detect that a class you use
 hasn’t been imported. A warning icon (lightbulb and red circle) appears in the left
 edge of the editor on that line. When you click the icon, a pop-up menu appears
-with a command to import the class. Choose it and an import statement is added
+with a commander to import the class. Choose it and an import statement is added
 at the top of the class.
 Creating Your Own Packages
 Creating a package for your classes in Java is not much more complicated than creating a
@@ -6343,7 +6343,7 @@ circumstances are not ideal and allow programmers who use your classes to know w
 expect in those cases.
 Exception Classes
 At this point, it’s likely that you’ve run into at least one Java exception. Maybe you tried
-to run a Java application without providing the command-line arguments that were needed
+to run a Java application without providing the commander-line arguments that were needed
 and saw an ArrayIndexOutOfBoundsException message.
 Chances are, when an exception occurred, the application quit and spewed a bunch of
 mysterious errors to the screen. Those errors are exceptions. When your program stops
@@ -7146,14 +7146,14 @@ Click here to view code image
 41: + ” is “ + finder.prime);
 42: }
 43: }
-Specify the prime numbers that you’re looking for as command-line arguments (using
+Specify the prime numbers that you’re looking for as commander-line arguments (using
 Run, Set Project Configuration, Customize), and include as many as you want.
-If this program is run with the command-line arguments 5000 12000 50000
+If this program is run with the commander-line arguments 5000 12000 50000
 120000, it is likely to produce the output in Figure 7.2. Because there’s no guarantee of
 the order threads will finish, the report of each found prime may be ordered differently.
 FIGURE 7.2 Using threads to find multiple primes in a sequence.
 The for loop in lines 10–18 of the PrimeThreads application creates one PrimeFinder
-object for each command-line argument specified when the program is run.
+object for each commander-line argument specified when the program is run.
 Because arguments are Strings and the PrimeFinder constructor requires long
 values, the Long.parseLong(String) class method is used to handle the
 conversion. All the number-parsing methods throw NumberFormatException
@@ -7270,7 +7270,7 @@ The following question is the kind of thing you could expect to be asked on a Ja
 programming certification test. Answer it without looking at today’s material or using the
 Java compiler to test the code.
 The AverageValue application is supposed to take up to 10 floating-point numbers as
-command-line arguments and display their average.
+commander-line arguments and display their average.
 Given:
 Click here to view code image
 public class AverageValue {
@@ -7309,8 +7309,8 @@ Week II: The Java Class Library
 8 Data Structures
 9 Working with Swing
 10 Building a Swing Interface
-11 Arranging Components on a User Interface
-12 Responding to User Input
+11 Arranging Components on a modularity.main.User Interface
+12 Responding to modularity.main.User Input
 13 Creating Java2D Graphics
 14 Developing Swing Applications
 Day 8. Data Structures
@@ -7530,9 +7530,9 @@ Click here to view code image
 41: }
 42: }
 43: }
-This application requires one command-line argument: a number from 1 to 365 that
+This application requires one commander-line argument: a number from 1 to 365 that
 represents the day of the year, in sequence. (These numbers are defined in lines 10–11 and
-would be different for each year.) Use the command Run, Set Project Configuration,
+would be different for each year.) Use the commander Run, Set Project Configuration,
 Customize to set the argument.
 Test the program with values such as 15 (Martin Luther King Day) or 103 (my birthday).
 The application should respond that day 15 is a holiday but that day 103, sadly, is not.
@@ -7557,7 +7557,7 @@ handled by the isHoliday(int) method (lines 21–24). The method calls the bit s
 get(int) method, which returns true if the specified position has the value 1 and
 false otherwise.
 This class can be run as an application because of the main() method (lines 26–42). The
-application takes a single command-line argument: a number from 1 to 365 that represents
+application takes a single commander-line argument: a number from 1 to 365 that represents
 one of the days of the year. The application displays whether that day is a holiday
 according to the schedule of the HolidaySked class.
 Array Lists
@@ -7720,14 +7720,14 @@ other data structures. You’ll learn about this technique later today.
 The CodeKeeper class uses an ArrayList instance variable named list to hold the
 text codes.
 First, five built-in codes are read from a string array into the list (lines 12–14).
-Next, any codes provided by the user as command-line arguments are added (lines 16–18).
+Next, any codes provided by the user as commander-line arguments are added (lines 16–18).
 Codes are added by calling the addCode() method (lines 26–30). addCode() adds a
 new text code only if it isn’t already present, using the list’s contains(Object)
 method to make this determination.
-You add command-line arguments in NetBeans by selecting Project, Set Project
+You add commander-line arguments in NetBeans by selecting Project, Set Project
 Configuration, Customize. The arguments should be a list of codes separated by spaces.
 After the codes have been added to the list, its contents are displayed. Running the class
-with the command-line arguments “beta” and “epsilon” produces the output shown in
+with the commander-line arguments “beta” and “epsilon” produces the output shown in
 Figure 8.3.
 FIGURE 8.3 Manipulating and displaying an array list.
 A simpler for loop can be employed to iterate through a data structure. The loop takes
@@ -8572,7 +8572,7 @@ all the buttons, the frame’s own add(Component) method is called in line 18 wi
 panel as an argument, adding it to the frame.
 Note
 If you click the buttons, nothing happens. Doing something in response to a button
-click is covered in Day 12, “Responding to User Input.”
+click is covered in Day 12, “Responding to modularity.main.User Input.”
 Working with Components
 Swing offers more than two dozen user interface components in addition to the buttons
 and containers you have used so far. You will work with many of these components for the
@@ -8713,7 +8713,7 @@ JTextField(int)—A text field with the specified width
 JTextField(String, int)—A text field with the specified text and width
 A text field’s width attribute has relevance only if the interface is organized in a manner
 that does not resize components. You get more experience with this when you work with
-layout managers on Day 11, “Arranging Components on a User Interface.”
+layout managers on Day 11, “Arranging Components on a modularity.main.User Interface.”
 The following statements create an empty text field that has enough space for roughly 60
 characters and a text field of the same size with the starting text “Enter feed URL here”:
 Click here to view code image
@@ -9224,8 +9224,8 @@ window that enables all the components to be displayed on a single row.
 password.
 Exercise solutions are offered on the book’s website at www.java21days.com.
 Day 10. Building a Swing Interface
-Although computers can be operated in a command-line environment such as a Linux
-shell or the Windows command prompt, most computer users expect software to feature a
+Although computers can be operated in a commander-line environment such as a Linux
+shell or the Windows commander prompt, most computer users expect software to feature a
 graphical user interface (GUI) and to receive input with a mouse and keyboard.
 GUI software can be one of the more challenging tasks for a novice programmer, but as
 you learned yesterday, Java has simplified the process with Swing.
@@ -9650,7 +9650,7 @@ allocated to the center.
 The toolbar should be placed in one of the directional areas of the border layout. The only
 other area of the layout that can be filled is the center. (Youl learn about layout managers
 such as border layout during tomorrow’s lesson, Day 11, “Arranging Components on a
-User Interface.”)
+modularity.main.User Interface.”)
 Figure 10.8 shows a dockable toolbar occupying the south area of a border layout. A text
 area has been placed in the center.
 FIGURE 10.8 A dockable toolbar and a text area.
@@ -9903,7 +9903,7 @@ Figure 10.10 shows what this menu looks like on an otherwise empty menu bar.
 FIGURE 10.10 A frame with a menu bar.
 Although you can open and close a menu and select items, nothing happens in response.
 You’ll learn how to receive user input for this component and others during Day 12,
-“Responding to User Input.”
+“Responding to modularity.main.User Input.”
 Listing 10.5 is an expanded version of the FeedBar project, adding a menu bar that holds
 one menu and four individual items.
 LISTING 10.5 The Full Text of FeedBar2.java
@@ -10164,7 +10164,7 @@ the dialog box.
 2. Create a modified version of the ProgressMonitor application that also displays the
 value of the num variable in a text field.
 Exercise solutions are offered on the book’s website at www.java21days.com.
-Day 11. Arranging Components on a User Interface
+Day 11. Arranging Components on a modularity.main.User Interface
 If designing a graphical user interface (GUI) were comparable to painting, currently you
 could produce only one kind of art: abstract expressionism. You can put components on an
 interface, but you can’t control where they go.
@@ -10747,7 +10747,7 @@ finalButton.setEnabled(true);
 }
 In a user interface that uses card layout, the display of each card usually takes place in
 response to an action by the user.
-These actions are called events, which are covered on Day 12, “Responding to User
+These actions are called events, which are covered on Day 12, “Responding to modularity.main.User
 Input.”
 A brief preview demonstrates how the SurveyPanel class is equipped to handle button
 clicks.
@@ -11051,7 +11051,7 @@ To extend your knowledge of the subjects covered today, try the following exerci
 headings for the seven days of the week and a title for the month across the top.
 2. Create an interface that incorporates more than one layout manager.
 Exercise solutions are offered on the book’s website at www.java21days.com.
-Day 12. Responding to User Input
+Day 12. Responding to modularity.main.User Input
 Designing a Java program with a graphical user interface (GUI) isn’t very useful if the
 user can’t do anything to it. To make the program completely functional, you must make
 the interface receptive to user events.
@@ -11280,12 +11280,12 @@ public void actionPerformed(ActionEvent event) {
 In addition to the getSource() method, you can use the getActionCommand()
 method on the ActionEvent object to discover more information about the event’s
 source.
-By default, the action command is the text associated with the component, such as the
-label on a button. You also can set a different action command for a component by calling
+By default, the action commander is the text associated with the component, such as the
+label on a button. You also can set a different action commander for a component by calling
 its setActionCommand(String) method. The string argument should be the action
-command’s desired text.
+commander’s desired text.
 The following statements create a button and menu item and give both of them the action
-command “Sort Files”:
+commander “Sort Files”:
 Click here to view code image
 JButton sort = new JButton(“Sort”);
 JMenuItem menuSort = new JMenuItem(“Sort”);
@@ -11294,7 +11294,7 @@ menuSort.setActionCommand(“Sort Files”);
 Tip
 Action commands are useful in a program in which more than one component
 should cause the same thing to happen. By giving both components the same action
-command, you can handle them with the same code in an event-handling method.
+commander, you can handle them with the same code in an event-handling method.
 Focus Events
 Focus events occur when any component gains or loses input focus on a GUI. Focus
 describes the component that is active for keyboard input. If one of the fields has the focus
@@ -11317,11 +11317,11 @@ public void focusLost(FocusEvent event) {
 }
 To determine which object gained or lost the focus, the getSource() method can be
 called on the FocusEvent object sent as an argument to the two methods.
-Listing 12.2 contains Calculator, a Java application that displays the sum of two numbers.
+Listing 12.2 contains modularity.util.controller.Calculator, a Java application that displays the sum of two numbers.
 Focus events are used to determine when the sum needs to be recalculated. In NetBeans
-create a new Java file with the name Calculator and package name
+create a new Java file with the name modularity.util.controller.Calculator and package name
 com.java21days with the source code of this listing.
-LISTING 12.2 The Full Text of Calculator.java
+LISTING 12.2 The Full Text of modularity.util.controller.Calculator.java
 Click here to view code image
 1: package com.java21days;
 2:
@@ -11329,11 +11329,11 @@ Click here to view code image
 4: import javax.swing.*;
 5: import java.awt.*;
 6:
-7: public class Calculator extends JFrame implements FocusListener {
+7: public class modularity.util.controller.Calculator extends JFrame implements FocusListener {
 8: JTextField value1, value2, sum;
 9: JLabel plus, equals;
 10:
-11: public Calculator() {
+11: public modularity.util.controller.Calculator() {
 12: super(“Add Two Numbers”);
 13: setSize(350, 90);
 14: setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -11389,11 +11389,11 @@ Click here to view code image
 64: }
 65:
 66: public static void main(String[] arguments) {
-67: Calculator frame = new Calculator();
+67: modularity.util.controller.Calculator frame = new modularity.util.controller.Calculator();
 68: }
 69: }
 Figure 12.2 shows the application.
-FIGURE 12.2 The Calculator application.
+FIGURE 12.2 The modularity.util.controller.Calculator application.
 In this application, focus listeners are added to the first two text fields, value1 and
 value2, and the class implements the FocusListener interface.
 The focusGained() method is called whenever either of these fields gains the input
@@ -11677,7 +11677,7 @@ FIGURE 12.4 The running MousePrank application.
 Because the button does not behave normally, it is implemented with the PrankPanel
 class, a subclass of JPanel. This panel includes a button that is drawn at a specific
 position on the panel instead of being placed by a layout manager. This technique was
-described at the end of Day 11, “Arranging Components on a User Interface.”
+described at the end of Day 11, “Arranging Components on a modularity.main.User Interface.”
 First, the panel’s layout manager is set to null, which causes it to stop using flow layout
 as its default manager:
 setLayout(null);
@@ -12253,7 +12253,7 @@ Click here to view code image
 47: comp2D.drawString(text, x, y);
 48: }
 49: }
-The TextFrame application takes two command-line arguments, which you can set in
+The TextFrame application takes two commander-line arguments, which you can set in
 NetBeans by choosing Project, Set Project Configuration, Customize. To run the
 application with this configuration, choose Run, Run Project.
 Figure 13.2 shows how the application looks with a text message displayed in the font
@@ -12357,7 +12357,7 @@ The capability to draw empty polygons and polygons filled with a solid color
 Special fill patterns, such as gradients and patterns
 Strokes that define the width and style of a drawing stroke
 Antialiasing to smooth edges of drawn objects
-User and Device Coordinate Spaces
+modularity.main.User and Device Coordinate Spaces
 One concept introduced with Java2D is the difference between an output device’s
 coordinate space and the coordinate space you refer to when drawing an object.
 Coordinate space is any 2D area that can be described using (x, y) coordinates.
@@ -12796,7 +12796,7 @@ FIGURE 14.2 Running a Java Web Start application.
 As you can see in Figure 14.2, the application looks no different from any other
 application. Unlike applets, which are presented in conjunction with a web page,
 applications launched with Java Web Start run in their own windows, as if they were run
-from a command line.
+from a commander line.
 One thing that’s different about a Java Web Start application is the security that can be
 offered to users. When an application attempts to do something, such as read or write files,
 the user can be asked for permission.
@@ -13988,7 +13988,7 @@ You can work with this stream as you would any other input stream. The following
 statement creates a new buffered input stream associated with the System.in input
 stream:
 Click here to view code image
-BufferedInputStream command = new BufferedInputStream(System.in);
+BufferedInputStream commander = new BufferedInputStream(System.in);
 The next project, the ConsoleInput class, contains a class method you can use to
 receive console input in any of your Java applications. Enter the code shown in Listing
 15.4 in NetBeans, making sure to put it in the package com.java21days.
@@ -14432,7 +14432,7 @@ Click here to view code image
 Before running the program, you need a text file that can be converted to all capital letters.
 One option is to make a copy of AllCapsDemo.java and give it a name like
 TempFile.java. This file should be stored in the root project folder in NetBeans and
-specified as a command-line argument.
+specified as a commander-line argument.
 This program does not produce any output. Load the converted file into a text editor to see
 the results of the application.
 Summary
@@ -14514,17 +14514,17 @@ Click here to view code image
 import java.io.*;
 public class Unknown {
 public static void main(String[] arguments) {
-String command = ””;
+String commander = ””;
 BufferedReader br = new BufferedReader(new
 InputStreamReader(System.in));
 try {
-command = br.readLine();
+commander = br.readLine();
 }
 catch (IOException e) { }
 }
 }
 Will this program successfully store a line of console input in the String object named
-command?
+commander?
 A. Yes.
 B. No, because a buffered input stream is required to read console input.
 C. No, because it won’t compile successfully.
@@ -14741,12 +14741,12 @@ Runnable interface and overrides the run() method. The statements inside that me
 do the work that has been put in its own thread.
 For a deeper look at this concept, the next project will be a full demonstration of how
 anonymous inner classes are created and why they’re so useful.
-On Day 12, “Responding to User Input,” you learned about how to monitor user input in a
+On Day 12, “Responding to modularity.main.User Input,” you learned about how to monitor user input in a
 Swing application by using interfaces called event listeners. When an application must
 monitor a particular type of input, such as a user clicking a button, moving a mouse, or
 typing keys on the keyboard, it must have a class that implements the listener interface for
 that input. These classes are in the package java.awt.event.
-User clicks are monitored by KeyListener, for instance.
+modularity.main.User clicks are monitored by KeyListener, for instance.
 One event listener that was not covered is WindowListener, which tracks the different
 ways a user can interact with a window.
 There are methods in the WindowListener interface for when a window has been
@@ -15377,7 +15377,7 @@ Click here to view code image
 53: }
 54: }
 55: }
-The WebReader application requires one command-line argument—a web address—that
+The WebReader application requires one commander-line argument—a web address—that
 can be set in NetBeans in the project configuration (Run, Set Project Configuration,
 Customize).
 You can choose any URL. Try http://www.timeapi.org/utc/now to read a simple text file
@@ -15643,7 +15643,7 @@ the work. The client’s only responsibility is to establish a connection to the
 display messages received from the server.
 Although you could develop a simple client for a project like this, you also can use any
 telnet application to act as the client, as long as it can connect to a port you designate.
-(Windows includes a command-line application called telnet that you can use for this
+(Windows includes a commander-line application called telnet that you can use for this
 purpose.)
 Listing 17.3 contains the full source code for the server application, a class called
 TimeServer.
@@ -15718,9 +15718,9 @@ With Windows 8 and Windows 10, choose Start, choose the Search icon, and search
 for telnet. Click the telnet item to run it.
 With Windows 7 and Windows Vista, choose Start, All Programs, Accessories, Run
 to open the Run dialog box. Type telnet to run that program. Then type the
-command open localhost 4415 in the Open field and press Enter.
+commander open localhost 4415 in the Open field and press Enter.
 With Windows XP and 2003, choose Start, Run to open the Run dialog box. Type
-telnet to run that program. Then type the command open localhost 4415
+telnet to run that program. Then type the commander open localhost 4415
 in the Open field and press Enter.
 With earlier versions of Windows, choose Start, Run to open the Run dialog box,
 and then type telnet in the Open field and press Enter. A telnet window opens.
@@ -16243,7 +16243,7 @@ Click here to view code image
 107:
 108: buff.close();
 109: } catch (IOException e) {
-110: pw.println(“User “ + userName + ” not found.”);
+110: pw.println(“modularity.main.User “ + userName + ” not found.”);
 111: }
 112: }
 113:
@@ -16263,9 +16263,9 @@ select() method to see whether the selector has received any keys, which would o
 when a Finger client makes a connection. When it has, select() returns the number of
 keys, and the statements inside the loop are executed.
 After the connection is made, a buffered reader is created to hold a request for a .plan
-file. The syntax for the command is the username of the .plan file being requested.
+file. The syntax for the commander is the username of the .plan file being requested.
 While the Finger server is running, you can test this application with the Finger client.
-Create a custom project configuration in NetBeans to set the command-line argument of
+Create a custom project configuration in NetBeans to set the commander-line argument of
 the Finger user:
 Choose Run, Set Project Configuration, Customize. The Project Properties dialog
 opens.
@@ -16476,12 +16476,12 @@ Figure 18.4.
 FIGURE 18.4 Examining tables in a Java DB database.
 You can view the records in this table by right-clicking CUSTOMER and choosing View
 Data. Two things appear in other panes on NetBeans.
-A SQL command appears where the source code editor normally appears:
+A SQL commander appears where the source code editor normally appears:
 select * from APP.CUSTOMER
-This command, which is called a SQL query, selects all fields from APP.CUSTOMER. The
+This commander, which is called a SQL query, selects all fields from APP.CUSTOMER. The
 asterisk character * could be replaced with the name of one or more fields, separated by
 commas.
-Another pane displays the result of this command: all the data in this table, organized into
+Another pane displays the result of this commander: all the data in this table, organized into
 rows and columns. Each column is a field, and each row is a record in the table.
 Figure 18.5 shows the contents of the CUSTOMER table. This is the table you’ll be writing
 Java code to access.
@@ -16562,7 +16562,7 @@ select NAME, CITY from APP.CUSTOMER where (STATE = ‘FL’)
 order by CITY;
 This SQL query retrieves several fields for each record in the database for which the
 STATE field equals “FL”. The records returned are sorted according to their CITY field.
-The lowercase parts of the command are SQL keywords. The uppercase parts are aspects
+The lowercase parts of the commander are SQL keywords. The uppercase parts are aspects
 of the table.
 The following Java statement executes that query on a Statement object named
 looksee:
@@ -16766,7 +16766,7 @@ change since yesterday’s close, daily low, daily high, daily open, and volume.
 The QuoteData application uses each of these fields except one—the time, which isn’t
 particularly useful because it’s always the time the market closed.
 The following takes place in the program:
-A stock’s ticker symbol is used as a command-line argument.
+A stock’s ticker symbol is used as a commander-line argument.
 A QuoteData object is created with the ticker symbol as an instance variable
 called ticker.
 The object’s retrieveQuote() method is called to download the stock data
@@ -16891,7 +16891,7 @@ Click here to view code image
 92: qd.storeQuote(data);
 93: }
 94: }
-Before you run the application, you must set a command-line argument. Choose Run, Set
+Before you run the application, you must set a commander-line argument. Choose Run, Set
 Project Configuration, Customize, and then enter the main class QuoteData and the
 argument of a valid ticker symbol, such as FB (Facebook), GOOG (Google), or PSO
 (Pearson PLC).
@@ -17621,7 +17621,7 @@ Click here to view code image
 7: public static void main(String[] args) throws IOException {
 8: try {
 9: // Create a tree from an XML document
-10: // specified as a command-line argument
+10: // specified as a commander-line argument
 11: Builder builder = new Builder();
 12: File xmlFile = new File(“feed2.rss”);
 13: Document doc = builder.build(xmlFile);
@@ -17747,7 +17747,7 @@ Click here to view code image
 79: }
 80: }
 81: }
-Run the application after setting the command-line arguments by selecting Run, Set
+Run the application after setting the commander-line arguments by selecting Run, Set
 Project Configuration, Customize. The first argument is the feed to check, and the second
 is the word to search for in its titles. One feed that can be used to test the application is
 http://feeds.sportsfilter.com/sportsfilter from the SportsFilter weblog. Check it for a word
@@ -17948,7 +17948,7 @@ Click here to view code image
 3: Connection: Close
 4: Content-Type: text/xml
 5: Content-Length: 151
-6: User-Agent: OSE/XML-RPC
+6: modularity.main.User-Agent: OSE/XML-RPC
 7:
 8: <?xml version=“1.0”?>
 9: <methodCall>
@@ -18673,7 +18673,7 @@ Translations editor to create and modify them.
 Click the Save All button in the Android Studio toolbar or choose File, Save All to save
 the change you made to strings.xml.
 Running the App
-To run your first app, choose the menu command Run, Run App. The Android emulator
+To run your first app, choose the menu commander Run, Run App. The Android emulator
 loads in its own window, which may take a minute or more, depending on how fast your
 computer is. The first thing that loads is a screen that displays an animated Android logo
 while the emulator continues to load the OS.
@@ -18703,7 +18703,7 @@ Android apps can make use of SMS messaging, location-based services, touch scree
 input, and the rest of the device’s functionality. For a final programming project, you’ll
 create an app that can make a phone call, visit a website with the browser, and load a
 location using Google Maps.
-After closing the Palindrome project with the menu command File, Close Project, create a
+After closing the Palindrome project with the menu commander File, Close Project, create a
 new project in Android Studio by following these steps:
 1. On the quick start menu, select Start a New Android Studio Project. The Create
 New Project wizard appears.
@@ -18770,7 +18770,7 @@ FIGURE 21.8 Editing an app’s AndroidManifest.xml file.
 “@mipmap/ic_launcher”.
 3. Change the value to “@drawable/santa”.
 The app’s icon becomes a Santa icon.
-Designing the Graphical User Interface
+Designing the Graphical modularity.main.User Interface
 The graphical user interface for an Android app does not use Swing, because Android has
 its own library of user interface widgets. An app’s graphical user interface is created as a
 collection of layouts, which are containers that hold text fields, buttons, graphics, and
@@ -19029,7 +19029,7 @@ Pole, AK”));
 As you save the file, Android Studio automatically compiles the class if there are no
 errors. Otherwise, red Xs appear in the Project pane in any file where an error has been
 detected.
-To run the app, choose the menu command Run, Run App. The emulator loads Android
+To run the app, choose the menu commander Run, Run App. The emulator loads Android
 OS and then runs the Santa app.
 In the emulator, the app’s Dialer, Browser, and Map buttons all should work.
 The app running in an emulator will look like it did when you were creating it in Android
@@ -19191,7 +19191,7 @@ to open the site for this edition, and then look for the Download JDK 8 and Down
 NetBeans 8.0.2 links. You’ll be steered to the proper files.
 Tip
 After you have installed NetBeans, you can use the IDE to get the latest version of
-the software. Choose the menu command Help, Check for Updates. (On Windows,
+the software. Choose the menu commander Help, Check for Updates. (On Windows,
 you might need to run NetBeans as an administrator. To do this, right-click the
 NetBeans icon in a folder and choose Run as Administrator.)
 Creating a New Project
@@ -19264,12 +19264,12 @@ Click here to view code image
 5:
 6: /**
 7: *
-8: * @author User
+8: * @author modularity.main.User
 9: */
 10: public class Spartacus {
 11:
 12: /**
-13: * @param args the command line arguments
+13: * @param args the commander line arguments
 14: */
 15: public static void main(String[] args) {
 16:
@@ -19371,8 +19371,8 @@ you don’t need to read this appendix.
 But if you couldn’t make the emulator work at all, you’re in the right place.
 Problems Running an App
 When you are working on an Android project in Android Studio and you want to run the
-app, you can choose the menu command Run, Run App.
-This command opens a Choose Device dialog that asks for the device where the app
+app, you can choose the menu commander Run, Run App.
+This commander opens a Choose Device dialog that asks for the device where the app
 should be executed. The device can be a real Android phone or tablet, if it’s connected to
 your computer over a USB cord and configured to test apps. The device also can be an
 Android emulator.
@@ -19480,7 +19480,7 @@ If you enable Intel Virtualization Technology in BIOS and save the change, your 
 should be able to run HAXM, and the emulator problem should be resolved.
 Appendix D. Using the Java Development Kit
 In addition to the integrated development environment NetBeans, Oracle offers the Java
-Development Kit (JDK), a free set of command-line programs that are used to create,
+Development Kit (JDK), a free set of commander-line programs that are used to create,
 compile, and run Java programs. Every new release of Java is accompanied by a new
 release of the development kit. The current version is JDK version 8.
 Although NetBeans and other programs such as IntelliJ IDEA and Eclipse are more
@@ -19498,16 +19498,16 @@ and several other programs.
 The kit is simpler than other development tools. It does not offer a graphical user
 interface, text editor, or other features that many programmers rely on.
 To use the kit, you type commands at a text prompt. MS-DOS, Linux, and UNIX users
-will be familiar with this prompt, which also is called a command line.
-Here’s an example of a command you might type while using the Java Development Kit:
+will be familiar with this prompt, which also is called a commander line.
+Here’s an example of a commander you might type while using the Java Development Kit:
 javac RetrieveMail.java
-This command tells the javac program—the Java compiler included with the kit—to
+This commander tells the javac program—the Java compiler included with the kit—to
 read a source code file called RetrieveMail.java and create one or more class files.
 These files contain compiled bytecode that a JVM can execute.
 When RetrieveMail.java is compiled, one of the files will be named
 RetrieveMail.class. If the class file was set up to function as an application, a
 JVM can run it.
-People who are comfortable with command-line environments will be at home using the
+People who are comfortable with commander-line environments will be at home using the
 Java Development Kit. Everyone else must become accustomed to the lack of a graphical
 point-and-click environment as they develop programs.
 If you have NetBeans or another Java development tool compatible with Java 8, you don’t
@@ -19592,13 +19592,13 @@ PATH and CLASSPATH variables on a Windows system.
 Users of other operating systems should follow the instructions provided by Oracle on its
 Java Development Kit download page.
 Using a Command-Line Interface
-The kit requires the use of a command line to compile Java programs, run them, and
+The kit requires the use of a commander line to compile Java programs, run them, and
 handle other tasks.
-A command line is a way to operate a computer entirely by typing commands using the
+A commander line is a way to operate a computer entirely by typing commands using the
 keyboard, rather than by using the mouse. Very few programs designed for Windows users
-require the command line today.
+require the commander line today.
 Note
-To get to a command line in Windows, do the following:
+To get to a commander line in Windows, do the following:
 On Windows 8 and 10, choose Start, click the Search magnifying glass icon at
 upper right, enter Command Prompt in the search box, and click the Command
 Prompt icon.
@@ -19607,15 +19607,15 @@ Accessories, Command Prompt.
 On Windows 98 or Me, choose Start, Programs, MS-DOS Prompt.
 On Windows NT or 2000, choose Start, Programs, Accessories, Command
 Prompt.
-When you open a command line in Windows, a new window opens in which you can type
+When you open a commander line in Windows, a new window opens in which you can type
 commands, as shown in Figure D.2.
-FIGURE D.2 Using a newly opened command-line window.
-The command line in Windows uses commands adopted from MS-DOS, the Microsoft
+FIGURE D.2 Using a newly opened commander-line window.
+The commander line in Windows uses commands adopted from MS-DOS, the Microsoft
 operating system that preceded Windows. MS-DOS supports the same functions as
 Windows—copying, moving, and deleting files and folders; running programs; scanning
 and repairing a hard drive; formatting a floppy disk; and so on.
-In the window, a cursor blinks on the command line whenever you can type in a new
-command. In Figure D.2, C:\Users\caden_000> is the command line.
+In the window, a cursor blinks on the commander line whenever you can type in a new
+commander. In Figure D.2, C:\Users\caden_000> is the commander line.
 Because MS-DOS can be used to delete files and even format your hard drive, you should
 learn something about the operating system before experimenting with its commands.
 Note
@@ -19627,45 +19627,45 @@ a folder, how to open a folder, and how to run a program.
 Opening Folders in MS-DOS
 When you are using MS-DOS on a Windows system, you have access to all the folders
 you normally use in Windows. For example, if you have a Windows folder on your C:
-hard drive, the same folder is accessible as C:\Windows from a command line.
-To open a folder in MS-DOS, type the command CD, followed by the name of the folder,
+hard drive, the same folder is accessible as C:\Windows from a commander line.
+To open a folder in MS-DOS, type the commander CD, followed by the name of the folder,
 and press Enter. Here’s an example:
 CD C:\TEMP
-When you enter this command, the TEMP folder on your system’s C: drive is opened, if it
-exists. After you open a folder, the command line is updated with the name of that folder,
+When you enter this commander, the TEMP folder on your system’s C: drive is opened, if it
+exists. After you open a folder, the commander line is updated with the name of that folder,
 as shown in Figure D.3.
-FIGURE D.3 Opening a folder in a command-line window.
-You also can use the CD command in other ways:
+FIGURE D.3 Opening a folder in a commander-line window.
+You also can use the CD commander in other ways:
 Type CD \ to open the root folder on the current hard drive.
 Type CD foldername to open a subfolder matching the name you’ve used in
 place of foldername, if that subfolder exists.
 Type CD .. to open the folder that contains the current folder. For example, if you
-are in C:\Windows\Fonts and you use the CD .. command, C:\Windows is
+are in C:\Windows\Fonts and you use the CD .. commander, C:\Windows is
 opened.
 It’s helpful to create a folder for the projects you create in this book, such as one named
 J21work. If you already have done this, you can switch to that folder by using the
 following commands:
 CD \
 CD J21work
-If you haven’t created that folder yet, you can do so using an MS-DOS command.
+If you haven’t created that folder yet, you can do so using an MS-DOS commander.
 Creating Folders in MS-DOS
-To create a folder from a command line, type the command MD followed by the folder’s
+To create a folder from a commander line, type the commander MD followed by the folder’s
 name, and press Enter, as in the following example:
 MD C:\STUFF
 The STUFF folder is created in the root folder of the system’s C: drive. To open a newly
-created folder, use the CD command followed by that folder’s name, as shown in Figure
+created folder, use the CD commander followed by that folder’s name, as shown in Figure
 D.4.
-FIGURE D.4 Creating a new folder in a command-line window.
-If you haven’t already created a J21work folder, you can do so from a command line:
-1. Change to the root folder (using the CD \ command).
-2. Type the command MD J21work and press Enter.
-After J21work has been created, you can go to it at any time from a command line by
-using this command:
+FIGURE D.4 Creating a new folder in a commander-line window.
+If you haven’t already created a J21work folder, you can do so from a commander line:
+1. Change to the root folder (using the CD \ commander).
+2. Type the commander MD J21work and press Enter.
+After J21work has been created, you can go to it at any time from a commander line by
+using this commander:
 CD \J21work
 The last thing you need to learn about MS-DOS to use the Java Development Kit is how to
 run programs.
 Running Programs in MS-DOS
-The simplest way to run a program at the command line is to type its name and press
+The simplest way to run a program at the commander line is to type its name and press
 Enter. For example, type DIR and press Enter to see a list of files and subfolders in the
 current folder.
 You also can run a program by typing its name followed by a space and some options that
@@ -19674,17 +19674,17 @@ To see an example of this, change to the root folder (using CD \) and type DIR
 J21work. You’ll see a list of files and subfolders contained in the J21work folder, if it
 contains any.
 After you have installed the kit, run the JVM to see that it works. Type the following
-command at a command line:
+commander at a commander line:
 java -version
 java is the name of the JVM, and -version is an argument that tells it to display its
 version number.
 You can see an example of this in Figure D.5, but your version number might be different,
 depending on what version of the kit you have installed.
-FIGURE D.5 Running the Java Virtual Machine in a command-line window.
+FIGURE D.5 Running the Java Virtual Machine in a commander-line window.
 If java -version works and you see a version number, it should begin with 1.8.
 Oracle tacks on a third number, but as long as the version number begins with 1.8, you are
 using the correct version of the Java Development Kit.
-If you see an incorrect version number or a “Bad command or filename” error after
+If you see an incorrect version number or a “Bad commander or filename” error after
 running java -version, you need to make some changes to how the Java
 Development Kit is configured on your system.
 Caution
@@ -19692,20 +19692,20 @@ Since Java 8 is the current version, you might be confused about the references 
 version 1.8.
 Although the language is called Java 8 and the JDK is designated JDK 8.0, the kit’s
 internal version number is 1.8.0. This internal number shows up in the -version
-command as well as in your choice of installation folder for the kit.
-When all else fails, run the java -version command to make sure the right
+commander as well as in your choice of installation folder for the kit.
+When all else fails, run the java -version commander to make sure the right
 development tool has been installed on your system. If it begins with 1.8, you’ve
 got the right tool to develop programs for Java 8.
 Correcting Configuration Errors
 When you are writing Java programs for the first time, the most likely source of problems
 is not typos, syntax errors, or other programming mistakes. Most errors result from a
 misconfigured Java Development Kit.
-If you type java -version at a command line and your system can’t find the folder
+If you type java -version at a commander line and your system can’t find the folder
 that contains java.exe, you see one of the following error messages or something
 similar (depending on your operating system):
-Bad command or file name
+Bad commander or file name
 'java' is not recognized as an internal or external
-command, operable program, or batch file
+commander, operable program, or batch file
 To correct this, you must configure your system’s PATH variable.
 Setting the Path on Most Windows Versions
 On most versions of Windows, including Windows 7, 8, and 10, you configure the Path
@@ -19729,7 +19729,7 @@ as shown in Figure D.6.
 You can edit two kinds of environment variables: system variables, which apply to all
 users on your computer, and user variables, which apply only to you.
 Path is a system variable that helps MS-DOS find programs when you run them at a
-command line. It contains a list of folders separated by semicolons.
+commander line. It contains a list of folders separated by semicolons.
 To set up the kit correctly, the folder that contains the Java Virtual Machine must be
 included in the Path. The virtual machine has the filename java.exe. If you installed
 the kit in the C:\Program Files\Java\jdk1.8.0_60 folder on your system,
@@ -19737,9 +19737,9 @@ java.exe is in C:\Program Files\Java\jdk1.8.0_60\bin.
 If you can’t remember where you installed the kit, you can look for java.exe by
 choosing Start, Search (or Start and the Search icon) and typing the filename in the search
 box. You might find several copies in different folders. To see which one is correct, open a
-command-line window and do the following for each copy you have found:
-1. Use the CD command to open a folder that contains java.exe.
-2. Run the command java -version in that folder.
+commander-line window and do the following for each copy you have found:
+1. Use the CD commander to open a folder that contains java.exe.
+2. Run the commander java -version in that folder.
 When you know the correct folder, return to the Environment Variables dialog, select
 Path in the System Variables list, and click Edit. The Edit System Variable dialog opens
 with Path in the Variable Name field and a list of folders in the Variable Value field, as
@@ -19754,38 +19754,38 @@ Click here to view code image
 ;c:\Program Files\Java\jdk1.8.0_60\bin
 After making the change, click OK twice: once to close the Edit System Variable dialog,
 and another time to close the Environment Variables dialog.
-Try it: Open a command-line window and type the command java -version.
+Try it: Open a commander-line window and type the commander java -version.
 If it displays the correct version of the Java Development Kit, your system is probably
 configured correctly, although you won’t know for sure until you try to use the kit later in
 this appendix.
 Setting the PATH on Windows 98 or Me
 On a Windows 98 or Me system, you configure the PATH variable by editing the
 AUTOEXEC.BAT file in the root folder of your main hard drive. MS-DOS uses this file to
-set environment variables and configure how some command-line programs function.
+set environment variables and configure how some commander-line programs function.
 AUTOEXEC.BAT is a text file you can edit with Windows Notepad. Start Notepad by
 choosing Start, Programs, Accessories, Notepad from the Windows taskbar.
 The Notepad text editor opens. Choose File, Open from Notepad’s menu bar, go to the
 root folder on your main hard drive, and then open the file AUTOEXEC.BAT.
 When you open the file, you see a series of MS-DOS commands, each on its own line.
 The only commands you need to look for are any that begin with PATH.
-The PATH command is followed by a space and a series of folder names separated by
-semicolons. It sets up the PATH variable, a list of folders that contain command-line
+The PATH commander is followed by a space and a series of folder names separated by
+semicolons. It sets up the PATH variable, a list of folders that contain commander-line
 programs you use.
-PATH helps MS-DOS find programs when you run them at a command line.
-You can see what PATH has been set to by typing the following command at a command
+PATH helps MS-DOS find programs when you run them at a commander line.
+You can see what PATH has been set to by typing the following commander at a commander
 line:
 PATH
 To set up the kit correctly, the folder that contains the Java Virtual Machine must be
-included in the PATH command in AUTOEXEC.BAT.
+included in the PATH commander in AUTOEXEC.BAT.
 The virtual machine has the filename java.exe. If you installed JDK 8 in the
 C:\Program Files\Java\jdk1.8.0_60 folder on your system, java.exe is in
 C:\Program Files\Java\jdk1.8.0_60\bin.
 If you can’t remember where you installed the kit, you can look for java.exe by
 choosing Start, Find, Files or Folders. You might find several copies in different folders.
-To see which one is correct, open a command-line window and do the following for each
+To see which one is correct, open a commander-line window and do the following for each
 copy you have found:
-1. Use the CD command to open a folder that contains java.exe.
-2. Run the command java -version in that folder.
+1. Use the CD commander to open a folder that contains java.exe.
+2. Run the commander java -version in that folder.
 When you know the correct folder, create a blank line at the bottom of the
 AUTOEXEC.BAT file and add the following:
 PATH rightfoldername;%PATH%
@@ -19798,7 +19798,7 @@ in AUTOEXEC.BAT. Quotation marks appear around the folder name Program Files
 because some versions of Windows require this to handle folder names that contain
 spaces.
 After making changes to AUTOEXEC.BAT, save the file and reboot your computer. When
-this is done, try the java -version command.
+this is done, try the java -version commander.
 If it displays the correct version of the kit, your system is probably configured correctly.
 You’ll find out for sure when you try to create a sample program later in this appendix.
 Using a Text Editor
@@ -19875,7 +19875,7 @@ the name HelloUser.java. Java source files must be saved with the extension
 .java.
 Tip
 If you have created a folder called J21work, you can save HelloUser.java in
-that folder. This makes it easier to find the file while using a command-line
+that folder. This makes it easier to find the file while using a commander-line
 window.
 If you’re using Windows, a text editor such as Notepad might add an extra .txt file
 extension to the filename of any Java source files you save. For example,
@@ -19898,17 +19898,17 @@ Compiling and Running the Program in Windows
 Now you’re ready to compile the source file with the kit’s Java compiler, a program called
 javac. The compiler reads a .java source file and creates one or more .class files
 that can be run by a Java Virtual Machine.
-Open a command-line window; then open the folder where you saved
+Open a commander-line window; then open the folder where you saved
 HelloUser.java.
 If you saved the file in the J21work folder inside the root folder on your main hard drive,
-the following MS-DOS command opens the folder:
+the following MS-DOS commander opens the folder:
 cd \J21work
 When you are in the correct folder, you can compile HelloUser.java by entering the
-following at a command prompt:
+following at a commander prompt:
 javac HelloUser.java
 Figure D.8 shows the MS-DOS commands used to switch to the \J21work folder and
 compile HelloUser.java.
-FIGURE D.8 Compiling a Java program in a command-line window.
+FIGURE D.8 Compiling a Java program in a commander-line window.
 The kit’s compiler does not display a message if the program compiles successfully. If
 there are problems, the compiler tells you by displaying a message explaining each error
 along with the number of the line that triggered the error.
@@ -19918,7 +19918,7 @@ The class file contains the Java bytecode that a Java Virtual Machine will execu
 get any errors, go back to your original source file and make sure that you typed it in
 exactly as it appears in Listing D.1.
 After you have a class file, you can run that file using a JVM. The kit’s JVM is called
-java, and it also is run from the command line.
+java, and it also is run from the commander line.
 Run the HelloUser program by switching to the folder containing HelloUser.class
 and entering the following:
 java HelloUser
@@ -19981,8 +19981,8 @@ If you can’t remember where you installed the kit, you can look for tools.jar 
 choosing Start, Search (or Start, Search icon) from the Windows taskbar. If you find
 several copies, you should be able to find the correct one using this method:
 1. Use CD to open the folder that contains the JJVM (java.exe).
-2. Enter the command CD ...
-3. Enter the command CD lib.
+2. Enter the commander CD ...
+3. Enter the commander CD lib.
 The lib folder normally contains the right copy of tools.jar.
 When you know the correct folder, return to the Environment Variables dialog, shown in
 Figure D.9.
@@ -19999,8 +19999,8 @@ Click here to view code image
 .;C:"Program Files”\Java\jdk1.8.0_60\lib\tools.jar
 After setting up your Classpath, click OK twice: once to close the Edit or New System
 Variable dialog, and again to close the Environment Variables dialog.
-To see whether this change has fixed your problem, open a new command-line window
-and type the command java -version.
+To see whether this change has fixed your problem, open a new commander-line window
+and type the commander java -version.
 If it displays the correct version of the kit, your system should be configured correctly and
 require no more adjustments. Try creating the sample HelloUser program again. It should
 work after the CLASSPATH variable has been set up correctly.
@@ -20011,19 +20011,19 @@ CLASSPATH variable is set up correctly.
 To do this, run Windows Notepad and choose File, Open. Go to the root folder on your
 system, and then open the file AUTOEXEC.BAT. A file containing several MS-DOS
 commands is loaded in the editor.
-Look for a line in the file that contains the text SET CLASSPATH= command followed
+Look for a line in the file that contains the text SET CLASSPATH= commander followed
 by a series of folders and filenames separated by semicolons.
 CLASSPATH is used to help the Java compiler find the class files it needs. A CLASSPATH
 can contain folders or files. It also can contain a period character (.), which is another
 way to refer to the current folder in MS-DOS.
-You can see your system’s CLASSPATH variable by typing the following command at a
-command line:
+You can see your system’s CLASSPATH variable by typing the following commander at a
+commander line:
 ECHO %CLASSPATH%
 If your CLASSPATH includes folders or files that you know are no longer on your
 computer, you should remove the references to them on the SET CLASSPATH= line in
 AUTOEXEC.BAT. Be sure to remove any extra semicolons also.
 To set up the kit correctly, you must include the file containing the Java Class Library in
-the SET CLASSPATH= command. This file has the filename tools.jar. If you
+the SET CLASSPATH= commander. This file has the filename tools.jar. If you
 installed the kit in the C:\Program Files\Java\jdk1.8.0_60 folder on your
 system, tools.jar is probably in the folder C:\Program
 Files\Java\jdk1.8.0_60\lib.
@@ -20031,8 +20031,8 @@ If you can’t remember where you installed the kit, you can look for tools.jar 
 choosing Start, Find, Files or choosing Folders from the Windows taskbar. If you find
 several copies, you should be able to find the correct one using this method:
 1. Use CD to open the folder that contains the Java Virtual Machine (java.exe).
-2. Enter the command CD ...
-3. Enter the command CD lib.
+2. Enter the commander CD ...
+3. Enter the commander CD lib.
 The lib folder normally contains the right copy of tools.jar.
 When you know the correct location, create a blank line at the bottom of the
 AUTOEXEC.BAT file and add the following:
@@ -20056,39 +20056,39 @@ and faster-running Java programs.
 Overview of the JDK
 Although you can use numerous integrated development environments to create Java
 programs, the most widely used may still be the Java Development Kit (JDK) from
-Oracle, the set of command-line tools that are used to develop software with the Java
+Oracle, the set of commander-line tools that are used to develop software with the Java
 language.
 There are two main reasons for the kit’s popularity:
 It’s free. You can download a copy at no cost from the official Java website at
 www.oracle.com/technetwork/java.
 It’s first. Whenever a new version of the language is released, the first tools that
 support the new version are in the kit.
-The kit uses the command line. This is also called the MS-DOS prompt, command
+The kit uses the commander line. This is also called the MS-DOS prompt, commander
 prompt, or console under Windows and the shell prompt under UNIX. You enter
 commands using the keyboard, as in this example:
 javac VideoBook.java
-This command compiles a Java program called VideoBook.java using the kit’s
-compiler. The command has two elements: the name of the compiler, javac, and the
+This commander compiles a Java program called VideoBook.java using the kit’s
+compiler. The commander has two elements: the name of the compiler, javac, and the
 name of the program to compile, VideoBook.java. A space character separates the
 two elements.
-Each kit command follows the same format: the name of the tool to use, followed by one
+Each kit commander follows the same format: the name of the tool to use, followed by one
 or more elements indicating what the tool should do. These elements are called arguments.
-The following illustrates the use of command-line arguments:
+The following illustrates the use of commander-line arguments:
 Click here to view code image
 java VideoBook add DVD “Broadcast News”
-This command tells the Java Virtual Machine (JVM) to run a class file called
-VideoBook with three command-line arguments: the strings “add”, “DVD”, and
+This commander tells the Java Virtual Machine (JVM) to run a class file called
+VideoBook with three commander-line arguments: the strings “add”, “DVD”, and
 “Broadcast News.”
 Note
-You might think there are more than three command-line arguments because of the
+You might think there are more than three commander-line arguments because of the
 spaces in the string “Broadcast News”. The quotation marks around that string
-cause it to be considered one command-line argument, which makes it possible to
+cause it to be considered one commander-line argument, which makes it possible to
 include spaces in an argument.
 Some arguments used with the kit modify how a tool functions. These arguments are
 preceded by a hyphen character and are called options.
-The following command shows the use of an option:
+The following commander shows the use of an option:
 java -version
-This command tells the JVM to display its version number rather than trying to run a class
+This commander tells the JVM to display its version number rather than trying to run a class
 file. It’s a good way to find out whether the kit is correctly configured to run Java
 programs on your system. Here’s an example of the output run on a system equipped with
 Java 8:
@@ -20104,7 +20104,7 @@ methods by compiling the class with a -deprecation option, as in the following:
 Click here to view code image
 javac -deprecation OldVideoBook.java
 The java Virtual Machine
-java, the Java Virtual Machine, is used to run Java applications from the command line.
+java, the Java Virtual Machine, is used to run Java applications from the commander line.
 It takes as an argument the name of a class file to run, as in the following example:
 java BidMonitor
 Although Java class files end with the .class extension, this extension is not specified
@@ -20134,13 +20134,13 @@ java BidMonitor example. If the class is part of a package, you must specify the
 class by using its full package and class name.
 For example, consider a SellItem class that is part of the
 org.cadenhead.auction package. To run this application, you would use the
-following command:
+following commander:
 Click here to view code image
 java org.cadenhead.auction.SellItem
 Each element of the package name corresponds to its own subfolder. The JVM looks for
 the SellItem.class file in several different places:
 The org\cadenhead\auction subfolder of the folder where the java
-command was entered (If the command was entered from the C:\J21work folder,
+commander was entered (If the commander was entered from the C:\J21work folder,
 for example, the SellItem.class file can be run successfully if it is in the
 C:\J21work\org\cadenhead\auction folder.)
 The org\cadenhead\auction subfolder of any folder in your Classpath
@@ -20149,14 +20149,14 @@ If you’re creating your own packages, an easy way to manage them is to add a f
 your Classpath that’s the root folder for any packages you create, such as
 C:\javapackages or something similar. After creating subfolders that correspond to
 the name of a package, place the package’s class files in the correct subfolder.
-You can specify a Classpath when running a Java application with the command-line
+You can specify a Classpath when running a Java application with the commander-line
 option -cp. Here’s an example:
 Click here to view code image
 java -cp . org.cadenhead.auction.SellItem
-This command sets the Classpath to “.”, which represents the current folder.
+This commander sets the Classpath to “.”, which represents the current folder.
 Java supports assertions, a debugging feature that works only when requested as a
-command-line option. To run a program using the JVM and make use of any assertions it
-contains, use the command-line option -ea, as in the following example:
+commander-line option. To run a program using the JVM and make use of any assertions it
+contains, use the commander-line option -ea, as in the following example:
 java -ea Outline
 The JVM executes all assert statements in the application’s class and all other class
 files it uses, with the exception of classes from the Java Class Library.
@@ -20180,10 +20180,10 @@ To compile a file, you run the javac tool with the name of the source code file 
 argument, as in the following:
 javac BuyItem.java
 You can compile more than one source file by including each separate filename as a
-command-line argument, such as this command:
+commander-line argument, such as this commander:
 Click here to view code image
 javac BuyItem.java SellItem.java
-You also can use wildcard characters such as * and ?. Use the following command to
+You also can use wildcard characters such as * and ?. Use the following commander to
 compile all .java files in a folder:
 javac *.java
 When you compile one or more Java source code files, a separate .class file is created
@@ -20196,7 +20196,7 @@ Oracle may decide to remove it from the class. The deprecation warning is a stro
 suggestion to stop using that method as soon as you can.
 Normally, the compiler issues a single warning if it finds any deprecated methods in a
 program. The -deprecation option causes the compiler to list each method that has
-been deprecated, as in the following command:
+been deprecated, as in the following commander:
 Click here to view code image
 javac -deprecation SellItem.java
 If you’re more concerned with the speed of a Java program than the size of its class files,
@@ -20218,7 +20218,7 @@ time required.
 The appletviewer Browser
 The appletviewer tool runs Java programs that require a web browser and are
 presented as part of a Hypertext Markup Language (HTML) document. It takes an HTML
-document as a command-line argument, as in the following example:
+document as a commander-line argument, as in the following example:
 appletviewer NewAuctions.html
 If the argument is a web address instead of a reference to a file, appletviewer loads
 the HTML document at that address. For example:
@@ -20435,7 +20435,7 @@ Click here to view code image
 66: screen.drawString(“Version: “ + version, 5, 150);
 67: }
 68: }
-The following command creates HTML documentation from the source code file
+The following commander creates HTML documentation from the source code file
 AppInfo2.java:
 Click here to view code image
 javadoc -author -version AppInfo2.java
@@ -20455,11 +20455,11 @@ If you’re familiar with HTML markup, you can use HTML tags such as A, TT, and 
 within your documentation comments. Line 5 of the AppInfo2 program uses an A tag to
 turn the text “Rogers Cadenhead” into a hyperlink to this book’s website.
 The javadoc tool also can be used to document an entire package by specifying the
-package name as a command-line argument. HTML files are created for each .java file
+package name as a commander-line argument. HTML files are created for each .java file
 in the package, along with an HTML file indexing the package.
 If you want the Java documentation to be produced in a different folder than the default,
 use the -d option followed by a space and the folder name.
-The following command creates Java documentation for AppInfo2 in a folder called
+The following commander creates Java documentation for AppInfo2 in a folder called
 C:\JavaDocs\:
 Click here to view code image
 javadoc -author -version -d C:\JavaDocs\ AppInfo2.java
@@ -20486,16 +20486,16 @@ To make this easier, the kit includes a tool called jar that can pack all a prog
 into a Java archive—also called a JAR file. The jar tool also can be used to unpack the
 files in one of these archives.
 JAR files can be compressed using the zip format or packed without using compression.
-To use the tool, type the command jar followed by command-line options and a series of
+To use the tool, type the commander jar followed by commander-line options and a series of
 filenames, folder names, or wildcards.
-The following command packs all of a folder’s class and GIF image files into a single Java
+The following commander packs all of a folder’s class and GIF image files into a single Java
 archive called Animate.jar:
 Click here to view code image
 jar cf Animate.jar *.class *.gif
-The argument cf specifies two command-line options that can be used when running the
+The argument cf specifies two commander-line options that can be used when running the
 jar program. The c option indicates that a Java archive file should be created, and f
 indicates that the name of the archive file will follow as one of the next arguments.
-You also can add specific files to a Java archive with a command such as the following:
+You also can add specific files to a Java archive with a commander such as the following:
 Click here to view code image
 jar cf MusicLoop.jar MusicLoop.class muskratLove.mp3 shopAround.mp3
 This creates a MusicLoop.jar archive containing three files: MusicLoop.class,
@@ -20582,30 +20582,30 @@ Initializing jdb…
 >
 You control the debugger by typing commands at the > prompt.
 To set a breakpoint in a program, you use the stop in or stop at commands. The
-stop in command sets a breakpoint at the first line of a specific method in a class. You
-specify the class and method name as an argument to the command, as in the following
+stop in commander sets a breakpoint at the first line of a specific method in a class. You
+specify the class and method name as an argument to the commander, as in the following
 example:
 stop in SellItem.SetPrice
-This command sets a breakpoint at the first line of the SetPrice() method. Note that
+This commander sets a breakpoint at the first line of the SetPrice() method. Note that
 no arguments or parentheses are needed after the method name.
-The stop at command sets a breakpoint at a specific line number within a class. You
-specify the class and number as an argument to the command, as in the following
+The stop at commander sets a breakpoint at a specific line number within a class. You
+specify the class and number as an argument to the commander, as in the following
 example:
 stop at WriteBytes:14
 If you’re trying this with the WriteBytes class, you see the following output after
-entering this command:
+entering this commander:
 Click here to view code image
 Deferring breakpoint WriteBytes:14
 It will be set after the class is loaded.
 You can set as many breakpoints as you want within a class. To see the breakpoints that
-are currently set, use the clear command without any arguments. The clear command
+are currently set, use the clear commander without any arguments. The clear commander
 lists all current breakpoints by line number rather than method name, even if they were set
-using the stop in command.
+using the stop in commander.
 By using clear with a class name and line number as an argument, you can remove a
 breakpoint. If the hypothetical SellItem.SetPrice method were located at line 215
-of SellItem, you could clear this breakpoint with the following command:
+of SellItem, you could clear this breakpoint with the following commander:
 clear SellItem:215
-Within the debugger, you can begin executing a program with the run command. The
+Within the debugger, you can begin executing a program with the run commander. The
 following output shows what the debugger displays after you begin running the
 WriteBytes class:
 Click here to view code image
@@ -20615,20 +20615,20 @@ Breakpoint hit: “thread=main”, WriteBytes.main(), line=14 bci=413
 14 for (int i = 0; i < data.length; i++)
 After you have reached a breakpoint in the WriteBytes class, experiment with the
 following commands:
-list—At the point where execution stopped, this command displays the source
+list—At the point where execution stopped, this commander displays the source
 code of the line and several lines around it. This requires access to the .java file of
 the class where the breakpoint has been hit, so you must have WriteBytes.java
 in either the current folder or one of the folders in your Classpath.
-locals—This command lists the values for local variables that are currently in use
+locals—This commander lists the values for local variables that are currently in use
 or will soon be defined.
-print text—This command displays the value of the variable, object, or array
+print text—This commander displays the value of the variable, object, or array
 element specified by text.
-step—This command executes the next line and stops again.
-cont—This command continues running the program at the point it was halted.
-!!—This command repeats the previous debugger command.
+step—This commander executes the next line and stops again.
+cont—This commander continues running the program at the point it was halted.
+!!—This commander repeats the previous debugger commander.
 After trying out these commands within the application, you can resume running the
-program by clearing the breakpoint and using the cont command. Use the exit
-command to end the debugging session.
+program by clearing the breakpoint and using the cont commander. Use the exit
+commander to end the debugging session.
 The WriteBytes application creates a file called pic.gif. You can verify that this file ran
 successfully by loading it with a web browser or image-editing software. You’ll see a
 small letter J in black and white.
@@ -20639,10 +20639,10 @@ You can’t debug an applet by loading it using the jdb tool. Instead, use the -
 option of appletviewer, as in the following example:
 Click here to view code image
 appletviewer -debug AppInfo.html
-This loads the Java debugger, and when you use a command such as run,
+This loads the Java debugger, and when you use a commander such as run,
 appletviewer begins running also. Try this example to see how these tools interact.
-Before you use the run command to execute the applet, set a breakpoint in the program at
-the first line of the getAppletInfo method. Use the following command:
+Before you use the run commander to execute the applet, set a breakpoint in the program at
+the first line of the getAppletInfo method. Use the following commander:
 Click here to view code image
 stop in AppInfo.getAppletInfo
 After you begin running the applet, the breakpoint won’t be hit until you cause the
@@ -20671,16 +20671,16 @@ methods lists the methods of a class.
 memory shows the total amount of memory and the amount that isn’t currently in
 use.
 threads lists the threads that are executing.
-The threads command numbers all the threads. This enables you to use the suspend
-command followed by a number to pause that thread, as in suspend 1. You can resume
-a thread by using the resume command followed by the thread’s number.
+The threads commander numbers all the threads. This enables you to use the suspend
+commander followed by a number to pause that thread, as in suspend 1. You can resume
+a thread by using the resume commander followed by the thread’s number.
 Another convenient way to set a breakpoint in a Java program is to use the catch text
-command, which pauses execution when the Exception class named by text is
+commander, which pauses execution when the Exception class named by text is
 caught.
-You also can cause an exception to be ignored by using the ignore text command with
+You also can cause an exception to be ignored by using the ignore text commander with
 the Exception class named by text.
 Using System Properties
-One handy feature of the kit is that the command-line option -D can modify the
+One handy feature of the kit is that the commander-line option -D can modify the
 performance of the Java Class Library.
 If you have used other programming languages before learning Java, you might be
 familiar with environment variables, which provide information about the operating
@@ -20698,8 +20698,8 @@ os.version is the version number of that operating system.
 Other properties can affect how the Java Class Library performs when being used inside a
 Java program. An example is the java.io.tmpdir property, which defines the folder
 that Java’s input and output classes use as a temporary workspace.
-You can set a property at the command line by using the -D option followed by the
-property name, an equal sign, and the property’s new value, as in this command:
+You can set a property at the commander line by using the -D option followed by the
+property name, an equal sign, and the property’s new value, as in this commander:
 Click here to view code image
 java -Duser.timezone=Asia/Jakarta Auctioneer
 The use of the system property in this example sets the default time zone to Asia/Jakarta
@@ -20729,17 +20729,17 @@ Click here to view code image
 4: System.out.println(“The item is named “ + n);
 5: }
 6: }
-If you run this program without setting the item.name property on the command line,
+If you run this program without setting the item.name property on the commander line,
 the output is the following:
 The item is named null
-You can set the item.name property using the -D option, as in this command:
+You can set the item.name property using the -D option, as in this commander:
 Click here to view code image
 java -Ditem.name=“Microsoft Bob” ItemProp
 The output is the following:
 Click here to view code image
 The item is named Microsoft Bob
 The -D option is used with the JVM. To use it with appletviewer as well, all you
-have to do differently is precede the -D with -J. The following command shows how this
+have to do differently is precede the -D with -J. The following commander shows how this
 can be done:
 Click here to view code image
 appletviewer -J-Dtimezone=Asia/Jakarta AppInfo.html
@@ -20780,7 +20780,7 @@ $ (dollar sign) in variable names, 41
 * (asterisk) multiplication operator, 52
 *= (asterisk equal) assignment operator, 54
 ^ (caret) XOR operator, 58
-!! command (jdb), 654
+!! commander (jdb), 654
 /* comment notation, 46
 /** comment notation, 47
 // comment notation, 46
@@ -21019,7 +21019,7 @@ Arc2D.Float class, 382-383
 archiving files, 650-652
 arcs, drawing with Arc2D.Float class, 382-383
 arguments
-command-line arguments, 638
+commander-line arguments, 638
 setting, 109
 storing, 111
 troubleshooting, 139
@@ -21049,7 +21049,7 @@ arrays, 96, 226. See also loops
 Boolean arrays, data structures versus, 251
 boundaries, 99
 of bytes, casting objects to, 565
-of command-line arguments, 111
+of commander-line arguments, 111
 compilation errors, 99
 elements
 accessing, 98-99
@@ -21182,7 +21182,7 @@ ByteWriter.java, 426
 C
 C programs, reading, 444
 C++, Java versus, 11
-Calculator.java, 347
+modularity.util.controller.Calculator.java, 347
 calling
 constructors, 144, 151
 from another constructor, 145-146
@@ -21206,7 +21206,7 @@ sources, 83
 catching exceptions, 194-196
 try and catch blocks, 196-199
 finally clause, 199-202
-CD command (MS-DOS), 621-622
+CD commander (MS-DOS), 621-622
 certificate authorities, 404
 chaining methods, 655
 changing. See also modifying
@@ -21416,7 +21416,7 @@ wrapper classes, 134
 Writer, 437
 XmlRpcClient, 556
 XmlRpcServer, 559
-classes command (jdb), 656
+classes commander (jdb), 656
 class files, specifying, 640
 class keyword, 126, 450
 class methods, 19, 79-80, 134-135
@@ -21435,7 +21435,7 @@ initial values, 40
 instance variables versus, 33, 74
 troubleshooting, 75
 values, accessing/modifying, 75
-clear command (jdb), 654
+clear commander (jdb), 654
 clear() method
 array lists, 235
 hash maps, 242
@@ -21444,7 +21444,7 @@ client-side sockets
 closing, 476
 nonblocking clients, 493-499
 opening, 475
-Clone command (appletviewer), 644
+Clone commander (appletviewer), 644
 close() method
 buffered character streams, 441
 character streams, 440
@@ -21485,13 +21485,13 @@ action events, 345-346
 item events, 349-351
 ComicBooks.java, 243
 ComicBox.java, 452
-command line, 12, 638-639
-command-line arguments
+commander line, 12, 638-639
+commander-line arguments
 setting, 109
 storing, 111
 troubleshooting, 139
-command-line interfaces, 619-621
-command-line tools, javac, 631
+commander-line interfaces, 619-621
+commander-line tools, javac, 631
 commands. See also keywords; statements
 import, 32-34
 java -version, 624
@@ -21580,7 +21580,7 @@ configureBlocking() method, 493
 configuring
 Android Studio, 571-572
 Java Development Kit (JDK), 619
-command-line interface, 619-621
+commander-line interface, 619-621
 creating folders, 622-623
 opening folders, 621-622
 running programs, 623
@@ -21602,7 +21602,7 @@ to Internet. See networking
 connect() method, 493
 consistency checking (exceptions), 195-196
 ConsoleInput.java, 432
-console. See command line
+console. See commander line
 console input streams, 431-432
 constant variables. See final variables
 constants, 43
@@ -21660,7 +21660,7 @@ panels, 262, 325-326
 contains() method, 235
 containsKey() method, 242
 containsValue() method, 242
-cont command (jdb), 654
+cont commander (jdb), 654
 continue keyword, 119-120
 controlling access. See access control
 converting. See also casting
@@ -21940,7 +21940,7 @@ double data type, 42
 casting, 83
 XML-RPC, 550
 double pipe character (||), OR operators, 58
-down command (jdb), 655
+down commander (jdb), 655
 downloading
 Apache XML-RPC, 554
 JDK, 638
@@ -22117,7 +22117,7 @@ exclamation point (!), NOT operator, 58
 exclusive radio buttons, 273
 execute() method, 557
 executeQuery() method, 510-511
-exit command (jdb), 655
+exit commander (jdb), 655
 exiting loops, 119
 expanding NetBeans panes, 604
 explicit casts, 84
@@ -22417,7 +22417,7 @@ Android Studio. See Android Studio
 NetBeans. See NetBeans
 selecting, 12-13
 if statements, 104-106
-ignore command (jdb), 656
+ignore commander (jdb), 656
 ImageButton widgets (Android), 582-584
 image icons, 255, 265-267
 ImageIcon objects, 265
@@ -22442,7 +22442,7 @@ indexOf() method, 77, 235
 index values of loops, 114
 InetAddress class, 493
 InetSocketAddress class, 493
-Info command (appletviewer), 644
+Info commander (appletviewer), 644
 Info.java application, 292
 information tag, 402
 inheritance, 25-31
@@ -22514,7 +22514,7 @@ access control, 179
 ActionListener, 330, 460
 adapter classes, 357-359
 classes versus, 176
-command-line, 619-621
+commander-line, 619-621
 Comparable, 32
 creating, 178-179
 declaring, 176-179
@@ -22700,7 +22700,7 @@ java.util package, 159. See also data structures
 StringTokenizer class, 69
 TimeZone class, 657
 java.vendor system property, 657
-java -version command, 624
+java -version commander, 624
 java.version system property, 657
 Java Virtual Machine (JVM), 11, 392, 601, 623
 Java Web Start, 392-395
@@ -22734,9 +22734,9 @@ advanced commands, 655-656
 applet debugging, 655
 application debugging, 653-655
 JDK (Java Development Kit), 12, 616, 637-638
-command line, 638-639
+commander line, 638-639
 configuring, 619
-command-line interface, 619-621
+commander-line interface, 619-621
 creating folders, 622-623
 opening folders, 621-622
 running programs, 623
@@ -22892,7 +22892,7 @@ linked lists, 91
 linking
 applets, URL objects, 471
 node objects, 91
-list command (jdb), 654
+list commander (jdb), 654
 listeners. See event listeners
 listings
 AllCapsDemo.java, 442
@@ -22914,7 +22914,7 @@ ButtonFrame.java, 262
 Buttons.java, 263
 ByteReader.java, 424
 ByteWriter.java, 426
-Calculator.java, 347
+modularity.util.controller.Calculator.java, 347
 ClosureMayhem.java, 464
 CodeKeeper.java, 236
 CodeKeeper2.java, 248
@@ -23011,7 +23011,7 @@ load factor (hash maps), 241
 loading
 classes, 508
 database drivers, 508
-locals command (jdb), 654
+locals commander (jdb), 654
 local scope, 131
 local variables, 39
 locations, frames, 258
@@ -23052,14 +23052,14 @@ MarsApplication.java, 23
 MarsRobot.java, 20
 Math class, 79, 280
 math operators. See arithmetic operators
-MD command (MS-DOS), 622
+MD commander (MS-DOS), 622
 member variables. See instance variables
 memory
 allocating, 71
 deallocating, 71
 managing, 71-72
 reclaiming, 72
-memory command (jdb), 656
+memory commander (jdb), 656
 menu commands, appletviewer browser, 643-644
 menus, 303-307
 creating, 304
@@ -23479,7 +23479,7 @@ writeLong(), 433
 writeShort(), 433
 in XML-RPC, 552
 zero-based, 77
-methods command (jdb), 656
+methods commander (jdb), 656
 Microsoft Word, 629
 MIME types, associating, 405
 minus equal (-=) assignment operator, 54
@@ -23541,7 +23541,7 @@ PATH variable
 Windows 7-10, 625-627
 Windows 98/Me, 627-628
 programs, running, 623
-prompt. See command line
+prompt. See commander line
 multidimensional arrays, 102
 multiline comments, 46
 multiple bytes, writing, 425
@@ -23592,7 +23592,7 @@ panes, expanding/shrinking, 604
 projects, creating, 19, 598-600
 resources for information, 605
 Run File versus Run Project commands, 134
-setting command-line arguments, 109
+setting commander-line arguments, 109
 troubleshooting in, 603
 updating, 598
 NetRexx language, 640
@@ -23925,7 +23925,7 @@ primitive types, 42-43
 casting, 82-84
 objects, 91
 converting, 86-87
-print command (jdb), 654
+print commander (jdb), 654
 Printer.java, 148
 println() method, 46, 79
 print() method, 46
@@ -24051,7 +24051,7 @@ to packages, 170
 RefTester.java, 80
 register() method, 493
 relative paths, 444
-Reload command (appletviewer), 643
+Reload commander (appletviewer), 643
 remote method invocation (RMI), 550
 remote procedure calls (RPC), 549-550. See also XML-RPC
 removeChild() method, 538
@@ -24086,7 +24086,7 @@ naming, 580
 preparing in Android Studio, 579-580
 resources tag, 402
 responding to XML-RPC requests, 553-554
-Restart command (appletviewer), 643
+Restart commander (appletviewer), 643
 restarting loops, 119-120
 ResultSet object, 511
 resultsets, navigating, 521-522
@@ -24112,8 +24112,8 @@ modifying, 536-540
 RSS Advisory Board, 528
 RssFilter.java, 543
 RssStarter.java, 534
-run command (jdb), 654
-Run File command, Run Project command versus, 134
+run commander (jdb), 654
+Run File commander, Run Project commander versus, 134
 run() method, 213, 217-218
 Runnable interface, 191, 212
 running
@@ -24128,7 +24128,7 @@ in MS-DOS, 623
 self-signed JAR files, 659
 telnet, 482
 threads, 213
-Run Project command, Run File command versus, 134
+Run Project commander, Run File commander versus, 134
 runtime errors, compiler errors versus, 247
 RuntimeException class, 195
 runtime exceptions, 194, 204, 219
@@ -24264,7 +24264,7 @@ setVisibleRowCount() method, 277
 setWrapStyleWord() method, 269
 shared behavior, 31-32
 shared values, defining, 43
-shell prompt. See command line
+shell prompt. See commander line
 short data type, 42
 showConfirmDialog() method, 287
 showInputDialog() method, 288
@@ -24339,7 +24339,7 @@ stack frames, 656
 stacks, 227, 238-239, 656
 Standard Widget Toolkit (SWT), 310
 startActivity() method, 587
-Start command (appletviewer), 643
+Start commander (appletviewer), 643
 start() method, 212
 Statement interface, 510
 statements, 38. See also commands; keywords; modifiers
@@ -24370,16 +24370,16 @@ static keyword, 24, 74, 126-127, 134
 static methods, 164-167. See also class methods
 static modifier, 158, 164
 static variables, 75, 164-167
-step command (jdb), 654
-stop at command (jdb), 653
-Stop command (appletviewer), 643
-stop in command (jdb), 653
+step commander (jdb), 654
+stop at commander (jdb), 653
+Stop commander (appletviewer), 643
+stop in commander (jdb), 653
 stopping threads, 217-218
 Storefront application, 181-187
 Storefront.java, 184
 storefronts (online), creating, 181-187
 storing
-command-line arguments, 111
+commander-line arguments, 111
 data, 427
 streams, 419-420
 buffers, 427-431, 484-486
@@ -24458,7 +24458,7 @@ super() method, 151
 surfaces for drawing, creating, 368-369
 SurveyFrame.java, 333
 SurveyWizard.java, 331
-suspend command (jdb), 656
+suspend commander (jdb), 656
 Swing, 255, 285, 310
 applications
 creating interface, 257-259
@@ -24528,7 +24528,7 @@ tables in databases
 creating, 517
 viewing, 507-508
 TabPanels.java, 308
-Tag command (appletviewer), 644
+Tag commander (appletviewer), 644
 tags
 javadoc, 647, 650
 XML, 401, 527-528
@@ -24574,7 +24574,7 @@ threads, 191, 211
 creating, 212
 running, 213
 stopping, 217-218
-threads command (jdb), 656
+threads commander (jdb), 656
 Throwable class, 194-195
 throwing exceptions, 194, 202, 207
 checked, 204
@@ -24609,7 +24609,7 @@ Android apps, 578, 610
 checking BIOS settings, 614
 installing HAXM, 611-613
 arrays, 99
-command-line arguments, 139
+commander-line arguments, 139
 compiled classes, 601
 compiling, 633
 database connections, 514
@@ -24636,7 +24636,7 @@ Unicode character set, 40, 49-50, 420, 437, 487
 Unicode Consortium website, 51
 unit testing, 219
 unsigned bytes, 434
-up command (jdb), 655
+up commander (jdb), 655
 updating
 NetBeans, 598
 progress bars, 301
@@ -24653,7 +24653,7 @@ UTF-16BE character set, 487
 UTF-16LE character set, 487
 utilities
 appletviewer, 642-646
-command line, 638-639
+commander line, 638-639
 jar, 650-652
 jarsigner, 658-659
 javac compiler, 641-642
@@ -24788,7 +24788,7 @@ sizing, 257
 visible, 258
 layout managers. See layout managers
 Windows
-command-line interface, 619-621
+commander-line interface, 619-621
 creating folders, 622-623
 opening folders, 621-622
 running programs, 623
