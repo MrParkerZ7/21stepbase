@@ -67,6 +67,11 @@
             <artifactId>hibernate-ehcache</artifactId>
             <version>5.2.11.Final</version>
         </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.11</version>
+        </dependency>
 
     </dependencies>
 
